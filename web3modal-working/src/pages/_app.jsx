@@ -9,6 +9,9 @@ import { configureChains, createConfig, WagmiConfig } from "wagmi";
 import { mainnet, optimism, polygon } from "wagmi/chains";
 import "../styles.css";
 
+import { List } from 'antd'
+
+
 // 1. Get projectID at https://cloud.walletconnect.com
 if (!process.env.NEXT_PUBLIC_PROJECT_ID) {
   throw new Error("You need to provide NEXT_PUBLIC_PROJECT_ID env variable");
@@ -38,6 +41,12 @@ export default function App({ Component, pageProps }) {
 
   return (
     <>
+        <List
+          header={<div>Connect with your preferred funding method!</div>}
+          footer={<div>Footer</div>}
+          bordered>
+
+      <List.Item>
       {ready ? (
         <WagmiConfig config={wagmiConfig}>
           <Component {...pageProps} />
@@ -45,6 +54,8 @@ export default function App({ Component, pageProps }) {
       ) : null}
 
       <Web3Modal projectId={projectId} ethereumClient={ethereumClient} />
+      </List.Item>
+    </List>
     </>
   );
 }

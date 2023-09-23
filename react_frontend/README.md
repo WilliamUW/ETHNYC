@@ -1,3 +1,5 @@
+npm install && npm run web
+
 # Build and Deploy a React Native App | 2023 React Native Course Tutorial for Beginners
 ![RN Course](https://i.ibb.co/VWMxgZz/File-cover-8.png)
 

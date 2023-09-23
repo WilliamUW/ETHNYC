@@ -4,9 +4,13 @@
 
 ### Prize Requirements
 
-1. Top 2 best uses of Modules with Biconomy SDK get $2000/each 
-2. Best one click Defi Recipe with Biconomy SDK gets $1000 
-3. Top 2 best web2 experience onchain get $1000/each
+Best use of Modules with Biconomy SDK - $2000 x 2
+
+Best one click Defi Recipe with Biconomy SDK - $1000 x 2
+
+Best web2 experience onchain - $1000 x 2
+
+Pool prize - $2000
 
 ### Please add a sentence or two on why you're applicable for this prize.
 

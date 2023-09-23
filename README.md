@@ -30,7 +30,7 @@ Technologies Used: The Graph, Worldcoin, Airstack, WalletConnect, UMA, 1inch Net
       -   Compatible with **([Apecoin](https://github.com/WilliamUW/ETHNYC/blob/main/sponsors/Apecoin.md))** 
    - Additionally, account abstraction is implemented using **([Biconomy](https://github.com/WilliamUW/ETHNYC/blob/main/sponsors/Biconomy.md))**.
 
-2. We leveraged **([Nouns](https://github.com/WilliamUW/ETHNYC/blob/main/sponsors/Nouns.md))**'s NFT API to create NFT badges for investors
+2. We leveraged **([Nouns](https://github.com/WilliamUW/ETHNYC/blob/main/sponsors/Nouns.md))** to generate unique user profile pictures based on the user's reputation  
    
 3. Fund NFTs minted using **([QuickNode](https://github.com/WilliamUW/ETHNYC/blob/main/sponsors/QuickNode.md))**
    - Unlock for membership NFTs, token gated access to investor only documentation **Unlock** **[unlock](link here)**
@@ -39,11 +39,11 @@ Technologies Used: The Graph, Worldcoin, Airstack, WalletConnect, UMA, 1inch Net
      
 3. NFT metadata is stored with **([IPFS](https://github.com/WilliamUW/ETHNYC/blob/main/sponsors/IPFS.md))**, so it never goes away 
    
-4. Universal token and chain support by leveraging **[Axlear]([link here](https://github.com/WilliamUW/ETHNYC/blob/main/sponsors/Axlear.md))**'s cross-chain communication 
+4. Universal token and chain support by leveraging **([Axlear](https://github.com/WilliamUW/ETHNYC/blob/main/sponsors/Axlear.md))**'s cross-chain communication 
 
 5. 
 
-Check out our [ETHGlobal page](link here)! Reputable.ai is an ([ETHGlobal Waterloo](https://ethglobal.com/events/waterloo2023](https://ethglobal.com/events/newyork2023))** project.
+Check out our [ETHGlobal page](link here)! Reputable.ai is an **([ETHGlobal Waterloo](https://ethglobal.com/events/waterloo2023](https://ethglobal.com/events/newyork2023)))** project.
 
 ## Pitch
 

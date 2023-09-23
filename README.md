@@ -30,13 +30,14 @@ Technologies Used: The Graph, Worldcoin, Airstack, WalletConnect, UMA, 1inch Net
 
 3. We leveraged **[Nouns](link here)'s NFT API** to create NFT badges representative of each fund.
    - NFTs minted using **QuickNode** **[QuickNode](link here)**
+   - Unlock for membership NFTs, token gated access to investor only documentation **Unlock** **[unlock](link here)**
      
-4. - 
+5. - 
 
 
 
-5. 
 6. 
-      
 7. 
+      
+8. 
 

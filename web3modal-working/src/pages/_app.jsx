@@ -9,7 +9,9 @@ import { configureChains, createConfig, WagmiConfig } from "wagmi";
 import { mainnet, optimism, polygon } from "wagmi/chains";
 import "../styles.css";
 
-import { List } from 'antd'
+import { List,InputNumber, Select, Button } from 'antd'
+
+
 
 import { MetaMaskSDK } from '@metamask/sdk';
 
@@ -51,11 +53,29 @@ export default function App({ Component, pageProps }) {
     setReady(true);
   }, []);
 
+  const [value, setValue] = useState('10');
+  const [currency, setCurrency] = useState('USDC');
+
+
+  const { Option } = Select;
+
+  const selectAfter = (
+    <Select defaultValue="USDC" style={{ width: 100 }} onChange={setCurrency}>
+      <Option value="USDC">USDC</Option>
+      <Option value="ETH">ETH</Option>
+      <Option value="BTC">BTC</Option>
+      <Option value="MATIC">MATIC</Option>
+      <Option value="SHIB">SHIB</Option>
+    </Select>
+  );
+
+
+
   return (
     <>
         <List
           header={<div>Connect with your preferred funding method!</div>}
-          footer={<div>Reach out to our AI assistant</div>}
+          footer={<div>Reach out to our AI assistant if you have any questions!</div>}
           bordered>
 
       <List.Item>
@@ -66,6 +86,16 @@ export default function App({ Component, pageProps }) {
       ) : null}
 
       <Web3Modal projectId={projectId} ethereumClient={ethereumClient} />
+      </List.Item>
+      <List.Item>
+        <p>How much would you like to invest?</p>
+      </List.Item>
+      <List.Item>
+      <InputNumber min={0} addonAfter={selectAfter} defaultValue={10} onChange={setValue} />
+      </List.Item>
+
+      <List.Item>      
+        <Button type="primary" onClick={() => alert("Investing " + value + " " + currency + " into the fund!")}>Confirm Transaction</Button>
       </List.Item>
     </List>
     </>

@@ -6,12 +6,28 @@ const fundData = [
   {
     id: 1,
     name: 'Fund A',
-    image_url: 'https://loremflickr.com/240/240?random=1',
+    image_url: 'fund_a_image.jpg',
     reputation_score: 85,
     description: 'Fund A is a diversified investment fund...',
     performance: '10% annual return (YTD)',
     management_fee: '1.5%',
-    transactions: ['Transaction 1', 'Transaction 2', 'Transaction 3'],
+    transactions: [
+      {
+        id: 1,
+        currency_image_url: 'usd_image.jpg',
+        date: '2023-09-22',
+        label: 'Investment',
+        change_in_balance: '+$500',
+      },
+      {
+        id: 2,
+        currency_image_url: 'btc_image.jpg',
+        date: '2023-09-21',
+        label: 'Purchase Bitcoin',
+        change_in_balance: '-0.05 BTC',
+      },
+      // Add more transaction data here
+    ],
     disputes: [
       { dispute_id: 1, description: 'Dispute 1', successful: true },
       { dispute_id: 2, description: 'Dispute 2', successful: false },
@@ -20,12 +36,12 @@ const fundData = [
   {
     id: 2,
     name: 'Fund B',
-    image_url: 'https://loremflickr.com/240/240?random=2',
+    image_url: 'fund_b_image.jpg',
     reputation_score: 92,
     description: 'Fund B is a high-risk, high-reward fund...',
     performance: '15% annual return (YTD)',
     management_fee: '2.0%',
-    transactions: ['Transaction 4', 'Transaction 5', 'Transaction 6'],
+    transactions: [],
     disputes: [],
   },
   // Add more fund data here
@@ -49,8 +65,10 @@ function App() {
         <div key={fund.id} className="fund-panel">
           <img src={fund.image_url} alt={fund.name} className="fund-image" />
           <div className="fund-details">
-            <h2>{fund.name}</h2>
-            <p>Reputation Score: {fund.reputation_score}/100</p>
+            <div className="fund-header">
+              <h2>{fund.name}</h2>
+              <p>Reputation Score: {fund.reputation_score}/100</p>
+            </div>
             <button onClick={() => openFundModal(fund)}>Open</button>
           </div>
         </div>
@@ -66,9 +84,22 @@ function App() {
             <p>Performance: {selectedFund.performance}</p>
             <p>Management Fee: {selectedFund.management_fee}</p>
             <h3>Transactions</h3>
-            <ul>
-              {selectedFund.transactions.map((transaction, index) => (
-                <li key={index}>{transaction}</li>
+            <ul className="transaction-list">
+              {selectedFund.transactions.map((transaction) => (
+                <li key={transaction.id} className="transaction-panel">
+                  <img
+                    src={transaction.currency_image_url}
+                    alt="Currency"
+                    className="currency-image"
+                    height="200"
+                    width="200"
+                  />
+                  <div className="transaction-details">
+                    <p>Date: {transaction.date}</p>
+                    <p>Label: {transaction.label}</p>
+                    <p>Change in Balance: {transaction.change_in_balance}</p>
+                  </div>
+                </li>
               ))}
             </ul>
             <h3>Disputes</h3>

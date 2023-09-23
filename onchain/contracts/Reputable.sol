@@ -155,9 +155,9 @@ contract Reputable is ERC721, Ownable {
         funds[id].assertionId = bytes32(0);
     }
 
-    function addFund(address _eoa) public onlyOwner {
+    function addFund(address _eoa, uint256 _repuation) public onlyOwner {
         Fund memory newFund = Fund(
-            MAX_REPUTATION,
+            _repuation,
             0,
             fundCount,
             false,

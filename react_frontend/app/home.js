@@ -10,6 +10,8 @@ import {
   Welcome,
 } from "../components";
 
+const walletAddress = "0x0E5d299236647563649526cfa25c39d6848101f5"
+
 const Home = () => {
   const router = useRouter()
   const [searchTerm, setSearchTerm] = useState("");
@@ -24,7 +26,7 @@ const Home = () => {
             <ScreenHeaderBtn iconUrl={icons.menu} dimension='60%' />
           ),
           headerRight: () => (
-            <ScreenHeaderBtn iconUrl={"https://noun-api.com/beta/pfp"} dimension='100%' />
+            <ScreenHeaderBtn iconUrl={"https://noun-api.com/beta/pfp?name=" + walletAddress} dimension='100%' />
           ),
           headerTitle: "",
         }}

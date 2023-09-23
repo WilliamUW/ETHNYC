@@ -93,7 +93,7 @@ function DisputeList({ disputes }) {
       {disputes.map((dispute, index) => (
         <List.Item key={index} className={`dispute-panel ${dispute.successful ? 'successful' : 'unsuccessful'}`}>
           <div>
-          <Image crossorigin="anonymous" src={dispute.image_url} width={50}  />
+          <Image crossorigin="anonymous" src={"https://noun-api.com/beta/pfp?name=" + dispute.user} width={50}  />
 
           </div>
           <div className="dispute-user">

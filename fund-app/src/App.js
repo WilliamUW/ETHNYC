@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
+import { Web3Button } from '@web3modal/react'
+
 
 // Sample fund data (you should replace this with your actual data)
 const fundData = [
@@ -47,29 +49,74 @@ const fundData = [
   // Add more fund data here
 ];
 
-function App() {
-  const [selectedFund, setSelectedFund] = useState(null);
 
-  const openFundModal = (fund) => {
-    setSelectedFund(fund);
-  };
-
-  const closeFundModal = () => {
-    setSelectedFund(null);
-  };
-
-  const handleDisputeButtonClick = (transaction) => {
-    // Display an alert with transaction details
-    alert(
-      `Would you like to dispute the following transaction? \n\n Transaction Details:\nDate: ${transaction.date}\nLabel: ${transaction.label}\nChange in Balance: ${transaction.change_in_balance}`
+  function App() {
+    const [selectedFund, setSelectedFund] = useState(null);
+    const [searchText, setSearchText] = useState('');
+    const [minReputation, setMinReputation] = useState(0);
+    const [maxReputation, setMaxReputation] = useState(100);
+    const [currentPage, setCurrentPage] = useState(1);
+    const fundsPerPage = 5; // Number of funds to display per page
+  
+    const openFundModal = (fund) => {
+      setSelectedFund(fund);
+    };
+  
+    const closeFundModal = () => {
+      setSelectedFund(null);
+    };
+  
+    const filteredFunds = fundData.filter(
+      (fund) =>
+        fund.name.toLowerCase().includes(searchText.toLowerCase()) &&
+        fund.reputation_score >= minReputation &&
+        fund.reputation_score <= maxReputation
     );
-  };
+  
+    const totalFunds = filteredFunds.length;
+    const totalPages = Math.ceil(totalFunds / fundsPerPage);
+  
+    const getPageFunds = () => {
+      const startIndex = (currentPage - 1) * fundsPerPage;
+      const endIndex = startIndex + fundsPerPage;
+      return filteredFunds.slice(startIndex, endIndex);
+    };
 
-  return (
-    <div className="App">
-      <h1>Fund List</h1>
-      {fundData.map((fund) => (
-        <div key={fund.id} className="fund-panel">
+    const handleDisputeButtonClick = (transaction) => {
+      // Display an alert with transaction details
+      alert(
+        `Would you like to dispute the following transaction? \n\n Transaction Details:\nDate: ${transaction.date}\nLabel: ${transaction.label}\nChange in Balance: ${transaction.change_in_balance}`
+      );
+    };
+  
+    return (
+      <div className="App">
+        <h1>Fund List</h1>
+        <div className="search-filter">
+          <input
+            type="text"
+            placeholder="Search by name"
+            value={searchText}
+            onChange={(e) => setSearchText(e.target.value)}
+          />
+          <div className="reputation-filter">
+            <label>Reputation Range:</label>
+            <input
+              type="number"
+              placeholder="Min"
+              value={minReputation}
+              onChange={(e) => setMinReputation(parseInt(e.target.value))}
+            />
+            <input
+              type="number"
+              placeholder="Max"
+              value={maxReputation}
+              onChange={(e) => setMaxReputation(parseInt(e.target.value))}
+            />
+          </div>
+        </div>
+        {getPageFunds().map((fund) => (
+          <div key={fund.id} className="fund-panel">
           <img src={fund.image_url} alt={fund.name} className="fund-image" />
           <div className="fund-details">
             <div className="fund-header">
@@ -79,9 +126,23 @@ function App() {
           </div>
           <button onClick={() => openFundModal(fund)}>Open</button>
         </div>
-      ))}
-      {selectedFund && (
-        <div className="modal">
+        ))}
+        {totalFunds === 0 && <p>No funds match the criteria.</p>}
+        {totalFunds > fundsPerPage && (
+          <div className="pagination">
+            {Array.from({ length: totalPages }, (_, index) => (
+              <button
+                key={index}
+                onClick={() => setCurrentPage(index + 1)}
+                className={currentPage === index + 1 ? 'active' : ''}
+              >
+                {index + 1}
+              </button>
+            ))}
+          </div>
+        )}
+        {selectedFund && (
+          <div className="modal">
           <div className="modal-content">
             <button className="close-button" onClick={closeFundModal}>
               Close
@@ -122,9 +183,9 @@ function App() {
             </ul>
           </div>
         </div>
-      )}
-    </div>
-  );
-}
-
-export default App;
+        )}
+      </div>
+    );
+  }
+  
+  export default App;

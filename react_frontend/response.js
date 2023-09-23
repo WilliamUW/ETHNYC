@@ -490,17 +490,17 @@ const response = {
                 "job_naics_name": "Custom Computer Programming Services"
             },
             {
-                "employer_name": "Silicon Valley Bank",
-                "employer_logo": "https://i.pinimg.com/originals/b6/12/3a/b6123a496ec2ae024d7222eaaa933b00.png",
+                "employer_name": "Ape",
+                "employer_logo": "https://storage.googleapis.com/ethglobal-api-production/organizations%2Ft3zyt%2Flogo%2F1677038614930_apecoin-coin.svg",
                 "employer_website": "http://www.elance.com",
                 "employer_company_type": "Computer Services",
-                "job_publisher": "Silicon Valley Bank",
+                "job_publisher": "",
                 "job_id": "vE_eb7u98LpPez-KAAAAAA==",
                 "job_employment_type": "Stocks",
-                "job_title": "Looking for Mutual Fund",
+                "job_title": "ApeFund",
                 "job_apply_link": "https://www.Silicon Valley Bank.com/freelance-jobs/apply/Looking-for-React-Native-Developer_~01d5dcc4b62d585fb1/",
                 "job_apply_is_direct": true,
-                "job_apply_quality_score": 0.6833,
+                "job_apply_quality_score": 0.9333,
                 "apply_options": [
                     {
                         "publisher": "Silicon Valley Bank",

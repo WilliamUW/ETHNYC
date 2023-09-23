@@ -32,14 +32,14 @@ const AssistantModal = () => {
         AI Assistant
       </Button>
       <Modal title="AI Assistant" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
-      <iframe
-        title="Embedded Website"
-        src="https://creator.voiceflow.com/prototype/650f3cda275e88510bea289d" // Replace with the URL of the website you want to embed
-        width="450" // Set the width of the iframe
-        height="500" // Set the height of the iframe
-        frameBorder="0" // Remove the iframe border
-        allowFullScreen // Enable fullscreen mode
-      ></iframe>
+        <iframe
+          title="Embedded Website"
+          src="https://creator.voiceflow.com/prototype/650f3cda275e88510bea289d" // Replace with the URL of the website you want to embed
+          width="450" // Set the width of the iframe
+          height="500" // Set the height of the iframe
+          frameBorder="0" // Remove the iframe border
+          allowFullScreen // Enable fullscreen mode
+        ></iframe>
       </Modal>
     </>
   );
@@ -87,9 +87,10 @@ const Welcome = ({ searchTerm, setSearchTerm, handleClick }) => {
   return (
     <View>
       <View style={styles.container}>
-      <Text style={styles.userName}>{verified ? "Hello William" : "Hello! Please log in to continue."}</Text>
-      <p></p>
-      <div><IDKitWidget
+        <Text style={styles.userName}>{verified ? "Hello William" : "Hello! Please log in to continue."}</Text>
+        <p></p>
+        <div>
+          <IDKitWidget
             action={process.env.NEXT_PUBLIC_WLD_ACTION_NAME || ""}
             onSuccess={onSuccess}
             handleVerify={handleProof}
@@ -118,12 +119,12 @@ const Welcome = ({ searchTerm, setSearchTerm, handleClick }) => {
           </IDKitWidget>
           <p></p>
           <AssistantModal /></div>
-          <p></p>
-      
+        <p></p>
+
         <Text style={styles.welcomeMessage}>Find your perfect investment</Text>
       </View>
 
-      
+
 
       <View style={styles.searchContainer}>
         <View style={styles.searchWrapper}>

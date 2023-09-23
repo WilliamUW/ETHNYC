@@ -111,7 +111,7 @@ export default function App({ Component, pageProps }) {
           </PrivyProvider>
         </List.Item> */}
         <List.Item>
-          <p>How much would you like to invest?</p>
+          <p>How much would you like to fund?</p>
         </List.Item>
         <List.Item>
           <InputNumber min={0} addonAfter={selectAfter} defaultValue={10} onChange={setValue} />

@@ -12,18 +12,85 @@ import { useRouter } from "expo-router";
 import styles from "./welcome.style";
 import { icons, SIZES } from "../../../constants";
 
+import { CredentialType, IDKitWidget } from "@worldcoin/idkit";
+
+
 const jobTypes = ["Mutual Funds", "Secondaries", "Crypto", "Stocks", "NFTs", "Charities"];
 
 const Welcome = ({ searchTerm, setSearchTerm, handleClick }) => {
   const router = useRouter();
   const [activeJobType, setActiveJobType] = useState("Full-time");
 
+  const [verified, setVerified] = useState(false);
+
+  const onSuccess = (result) => {
+    // This is where you should perform frontend actions once a user has been verified, such as redirecting to a new page
+    setVerified(true);
+  };
+
+  const handleProof = async (result) => {
+    const reqBody = {
+      merkle_root: result.merkle_root,
+      nullifier_hash: result.nullifier_hash,
+      proof: result.proof,
+      credential_type: result.credential_type,
+      action: process.env.NEXT_PUBLIC_WLD_ACTION_NAME,
+      signal: "",
+    };
+    fetch("/api/verify", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(reqBody),
+    }).then(async (res) => {
+      if (res.status == 200) {
+        console.log("Successfully verified credential.");
+      } else {
+        throw (
+          new Error("Error: " + (await res.json()).code) ?? "Unknown error."
+        );
+      }
+    });
+  };
+
   return (
     <View>
       <View style={styles.container}>
-        <Text style={styles.userName}>Hello William</Text>
+      <Text style={styles.userName}>{verified ? "Hello William" : "Hello! Please log in to continue."}</Text>
+      <p></p>
+      <IDKitWidget
+            action={process.env.NEXT_PUBLIC_WLD_ACTION_NAME || ""}
+            onSuccess={onSuccess}
+            handleVerify={handleProof}
+            app_id={"app_4020275d788fc6f5664d986dd931e5e6" || ""}
+            credential_types={[CredentialType.Orb, CredentialType.Phone]}
+          >
+            {({ open }) => (
+              <button
+                onClick={open}
+                style={{
+                  padding: "10px 20px",
+                  fontSize: "16px",
+                  fontWeight: "bold",
+                  borderRadius: "5px",
+                  color: "#fff",
+                  backgroundColor: "black",
+                  border: "none",
+                  cursor: "pointer",
+                  boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
+                  transition: "background-color 0.3s",
+                }}
+              >
+                Verify with World ID
+              </button>
+            )}
+          </IDKitWidget>
+          <p></p>
         <Text style={styles.welcomeMessage}>Find your perfect investment</Text>
       </View>
+
+      
 
       <View style={styles.searchContainer}>
         <View style={styles.searchWrapper}>

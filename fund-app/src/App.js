@@ -17,7 +17,7 @@ const fundData = [
         currency_image_url: 'ETH.png',
         date: '2023-09-22',
         label: 'Received ETH',
-        change_in_balance: '+$500',
+        change_in_balance: '+500 ETH',
       },
       {
         id: 2,

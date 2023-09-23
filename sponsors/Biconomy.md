@@ -10,7 +10,7 @@
 
 ### Please add a sentence or two on why you're applicable for this prize.
 
-We leveraged Biconomy for account abstraction and to facilitate user transactions. 
+We leveraged Biconomy Modules for account abstraction and to facilitate user transactions. 
 
 ### Link to the code where the tech is used.
 

@@ -13,3 +13,6 @@ We leveraged 1inch Network to implement gas optimization strategies to reduce tr
 
 ### Link to the code where the tech is used.
 
+### How easy is it to use the API / Protocol? (1 - very difficult, 10 - very easy)
+
+### Additional Feedback

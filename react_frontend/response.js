@@ -10,7 +10,7 @@ const response = {
         "data": [
             {
                 "employer_name": "Vanguard",
-                "employer_logo": "https://asset.brandfetch.io/idf3bcOruF/idez9tvu_u.png",
+                "employer_logo": "https://i.pinimg.com/originals/b6/12/3a/b6123a496ec2ae024d7222eaaa933b00.png",
                 "employer_website": null,
                 "employer_company_type": null,
                 "job_publisher": "LinkedIn",
@@ -491,7 +491,7 @@ const response = {
             },
             {
                 "employer_name": "Silicon Valley Bank",
-                "employer_logo": "https://loremflickr.com/g/240/240?random=6",
+                "employer_logo": "https://i.pinimg.com/originals/b6/12/3a/b6123a496ec2ae024d7222eaaa933b00.png",
                 "employer_website": "http://www.elance.com",
                 "employer_company_type": "Computer Services",
                 "job_publisher": "Silicon Valley Bank",
@@ -561,7 +561,7 @@ const response = {
             },
             {
                 "employer_name": "Dice",
-                "employer_logo": "https://loremflickr.com/g/240/240/bank,professional,finance/all?random=7",
+                "employer_logo": "https://i.pinimg.com/originals/b6/12/3a/b6123a496ec2ae024d7222eaaa933b00.png",
                 "employer_website": null,
                 "employer_company_type": "Information",
                 "job_publisher": "LinkedIn",
@@ -639,8 +639,8 @@ const response = {
                 "job_naics_name": "Internet Publishing and Broadcasting and Web Search Portals"
             },
             {
-                "employer_name": "TechnoSphere, Inc.",
-                "employer_logo": "https://loremflickr.com/g/240/240/bank,professional,finance/all?random=8",
+                "employer_name": "BoA",
+                "employer_logo": "https://www.bankofamerica.com/content/images/ContextualSiteGraphics/Logos/en_US/logos/colored_flagscape-v2.png",
                 "employer_website": null,
                 "employer_company_type": null,
                 "job_publisher": "LinkedIn",
@@ -749,7 +749,7 @@ const response = {
             },
             {
                 "employer_name": "Puresoft, Inc.",
-                "employer_logo": "https://loremflickr.com/g/240/240/bank,professional,finance/all?random=9",
+                "employer_logo": "https://www.bankofamerica.com/content/images/ContextualSiteGraphics/Logos/en_US/logos/colored_flagscape-v2.png",
                 "employer_website": null,
                 "employer_company_type": null,
                 "job_publisher": "Salary.com",
@@ -821,7 +821,7 @@ const response = {
             },
             {
                 "employer_name": "Silicon Valley Bank",
-                "employer_logo": "https://loremflickr.com/g/240/240/bank,professional,finance/all?random=10",
+                "employer_logo": "https://www.bankofamerica.com/content/images/ContextualSiteGraphics/Logos/en_US/logos/colored_flagscape-v2.png",
                 "employer_website": null,
                 "employer_company_type": null,
                 "job_publisher": "Silicon Valley Bank",

@@ -1,5 +1,5 @@
 import { View, Text } from "react-native";
-import { Button, Card, List } from 'antd';
+import { Button, Card, List, Image } from 'antd';
 
 import styles from "./specifics.style";
 
@@ -31,9 +31,9 @@ function TransactionList({ transactions }) {
 
           </div>
           <div>
-          <Button className="dispute-button" type="primary">View Transaction Details</Button>
+          <Button className="dispute-button" type="primary" onClick={() => alert("https://etherscan.io/tx/" + transaction.transactionHash)}>View Transaction Details</Button>
           <p></p>
-            <Button className="dispute-button" type="dashed">Dispute Transaction</Button></div>
+            <Button className="dispute-button" type="dashed" onClick={() => alert("Transaction Disputed!")}>Dispute Transaction</Button></div>
           
         </List.Item>
       ))}
@@ -46,29 +46,32 @@ const exampleDisputes = [
   {
     user: 'User1',
     successful: true,
-    changeInReputation: 1,
+    changeInReputation: -0.78,
     transactionHash: '0x9b83386f626320e73a7370fac9fe99cef894b5aec9c9471daea382c6255d973e',
     transactionAmount: 100,
     transactionCurrency: 'USD',
     date: '2023-09-25',
+    image_url: 'https://noun-api.com/beta/pfp?name=1'
   },
   {
     user: 'User2',
     successful: false,
-    changeInReputation: -1,
+    changeInReputation: 1.1,
     transactionHash: '0x7c6a18f28d8a17ecf4b69d4b4e3e51a6f122b1e3a5ee7c72b6f6c9c6c6c6c6c6',
     transactionAmount: 50,
     transactionCurrency: 'EUR',
     date: '2023-09-24',
+    image_url: 'https://noun-api.com/beta/pfp?name=2'
   },
   {
     user: 'User3',
     successful: true,
-    changeInReputation: 1,
+    changeInReputation: -1.5,
     transactionHash: '0x3d5e2f1c8b7a9b5c4c8b7a9b5c4c8b7a9b5c4c8b7a9b5c4c8b7a9b5c4c8b7a9b5c',
     transactionAmount: 75,
     transactionCurrency: 'GBP',
     date: '2023-09-23',
+    image_url: 'https://noun-api.com/beta/pfp?name=3'
   },
 ];
 
@@ -89,6 +92,10 @@ function DisputeList({ disputes }) {
     <List className="dispute-list">
       {disputes.map((dispute, index) => (
         <List.Item key={index} className={`dispute-panel ${dispute.successful ? 'successful' : 'unsuccessful'}`}>
+          <div>
+          <Image crossorigin="anonymous" src={dispute.image_url} width={50}  />
+
+          </div>
           <div className="dispute-user">
             <p><strong>Submitted by User:</strong> {dispute.user}</p>
             <p><strong>Successful:</strong> {dispute.successful ? 'Yes' : 'No'}</p>

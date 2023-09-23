@@ -1,5 +1,5 @@
 import { View, Text } from "react-native";
-import { Button } from 'antd';
+import { Button, Card, List } from 'antd';
 
 import styles from "./specifics.style";
 
@@ -11,41 +11,124 @@ import React from 'react';
 
 function TransactionList({ transactions }) {
   return (
-    <div>
+    <List>
       {transactions.map((transaction, index) => (
-        <div key={index} className="transaction-panel">
-          <div className="transaction-details">
+        <List.Item key={index} className="transaction-panel">
+          <div>
             <p><strong>Amount:</strong> {transaction.amount}</p>
-            <p><strong>Block Number:</strong> {transaction.blockNumber}</p>
-            <p><strong>Block Timestamp:</strong> {transaction.blockTimestamp}</p>
-            <p><strong>From:</strong> {transaction.from.addresses[0]}</p>
-            <p><strong>To:</strong> {transaction.to.addresses[0]}</p>
-            <p><strong>Token Address:</strong> {transaction.tokenAddress}</p>
-            <p><strong>Transaction Hash:</strong> {transaction.transactionHash}</p>
             <p><strong>Token Type:</strong> {transaction.tokenType}</p>
             <p><strong>Blockchain:</strong> {transaction.blockchain}</p>
+            </div>
+            <div>            <p><strong>From:</strong> {transaction.from.addresses[0]}</p>
+            <p><strong>To:</strong> {transaction.to.addresses[0]}</p>
+            <p><strong>Token Address:</strong> {transaction.tokenAddress}</p></div>
+          <div className="transaction-details">
+            
+            <p><strong>Block Number:</strong> {transaction.blockNumber}</p>
+            <p><strong>Block Timestamp:</strong> {transaction.blockTimestamp}</p>
+
+            <p><strong>Transaction Hash:</strong> {transaction.transactionHash}</p>
+
           </div>
-          <button className="dispute-button">Dispute</button>
-        </div>
+          <div>
+          <Button className="dispute-button" type="primary">View Transaction Details</Button>
+          <p></p>
+            <Button className="dispute-button" type="dashed">Dispute Transaction</Button></div>
+          
+        </List.Item>
       ))}
+    </List>
+  );
+}
+
+
+const exampleDisputes = [
+  {
+    user: 'User1',
+    successful: true,
+    changeInReputation: 1,
+    transactionHash: '0x9b83386f626320e73a7370fac9fe99cef894b5aec9c9471daea382c6255d973e',
+    transactionAmount: 100,
+    transactionCurrency: 'USD',
+    date: '2023-09-25',
+  },
+  {
+    user: 'User2',
+    successful: false,
+    changeInReputation: -1,
+    transactionHash: '0x7c6a18f28d8a17ecf4b69d4b4e3e51a6f122b1e3a5ee7c72b6f6c9c6c6c6c6c6',
+    transactionAmount: 50,
+    transactionCurrency: 'EUR',
+    date: '2023-09-24',
+  },
+  {
+    user: 'User3',
+    successful: true,
+    changeInReputation: 1,
+    transactionHash: '0x3d5e2f1c8b7a9b5c4c8b7a9b5c4c8b7a9b5c4c8b7a9b5c4c8b7a9b5c4c8b7a9b5c',
+    transactionAmount: 75,
+    transactionCurrency: 'GBP',
+    date: '2023-09-23',
+  },
+];
+
+function App() {
+  return (
+    <div>
+      <h1>Dispute List</h1>
+      <DisputeList disputes={exampleDisputes} />
     </div>
   );
 }
 
 
 
+
+function DisputeList({ disputes }) {
+  return (
+    <List className="dispute-list">
+      {disputes.map((dispute, index) => (
+        <List.Item key={index} className={`dispute-panel ${dispute.successful ? 'successful' : 'unsuccessful'}`}>
+          <div className="dispute-user">
+            <p><strong>Submitted by User:</strong> {dispute.user}</p>
+            <p><strong>Successful:</strong> {dispute.successful ? 'Yes' : 'No'}</p>
+
+          </div>
+          
+          <div className="transaction-details">
+            <p><strong>Transaction Hash:</strong> {dispute.transactionHash}</p>
+            <p><strong>Transaction Amount:</strong> {dispute.transactionAmount} {dispute.transactionCurrency}</p>
+            <p><strong>Date:</strong> {dispute.date}</p>
+          </div>
+          <div className="dispute-result">
+            <p><strong>Change in Reputation:</strong> {dispute.changeInReputation}</p>
+          </div>
+          <Button type="primary">View Dispute Details</Button>
+        </List.Item>
+      ))}
+    </List>
+  );
+}
+
+
+
+
 const Specifics = ({ title, points }) => {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>{title}:</Text>
+      
 
       {title == "Transactions" &&
-      <TransactionList transactions={transactions} />}
+      <View>
+        <Text style={styles.title}>{title}:</Text>
+      <TransactionList transactions={transactions} />
+      </View>}
 
       {title == "Reputation" && 
       <View style={styles.pointsContainer}>
+        <Text style={styles.title}>{title}: 98</Text>
         <p></p>
-        <Button type="primary">Import Reputation</Button>
+        <Button type="primary">Import Reputation with UMA x The Graph</Button>
 
 
         <p></p>
@@ -56,6 +139,15 @@ const Specifics = ({ title, points }) => {
           </View>
         ))}
       </View>}
+
+      {title == "Disputes" && 
+      <View style={styles.pointsContainer}>
+        <Text style={styles.title}>{title}:</Text>
+        <DisputeList disputes={exampleDisputes} />
+
+      </View>}
+
+      
     </View>
   );
 };

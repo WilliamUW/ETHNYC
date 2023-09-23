@@ -16,7 +16,7 @@ const response = {
                 "job_publisher": "LinkedIn",
                 "job_id": "y3qx-Vemzh9il51RAAAAAA==",
                 "job_employment_type": "Mutual Funds",
-                "job_title": "Mutual Fund (Mid-Level)",
+                "job_title": "Mutual Fund (APAC)",
                 "job_apply_link": "https://www.linkedin.com/jobs/view/react-native-developer-mid-level-at-red-technologies-3725941323",
                 "job_apply_is_direct": false,
                 "job_apply_quality_score": 0.8444,

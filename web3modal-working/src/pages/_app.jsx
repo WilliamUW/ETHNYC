@@ -9,8 +9,10 @@ import { configureChains, createConfig, WagmiConfig } from "wagmi";
 import { mainnet, optimism, polygon } from "wagmi/chains";
 import "../styles.css";
 
-import { List,InputNumber, Select, Button } from 'antd'
+import { List, InputNumber, Select, Button } from 'antd'
 
+import Head from 'next/head';
+import {PrivyProvider} from '@privy-io/react-auth';
 
 
 import { MetaMaskSDK } from '@metamask/sdk';
@@ -69,35 +71,56 @@ export default function App({ Component, pageProps }) {
     </Select>
   );
 
+  // This method will be passed to the PrivyProvider as a callback
+  // that runs after successful login.
+  const handleLogin = (user) => {
+    console.log(`User ${user.id} logged in!`)
+  }
 
 
   return (
     <>
-        <List
-          header={<div>Connect with your preferred funding method!</div>}
-          footer={<div>Reach out to our AI assistant if you have any questions!</div>}
-          bordered>
+      <List
+        header={<div>Connect with your preferred funding method!</div>}
+        footer={<div>Reach out to our AI assistant if you have any questions!</div>}
+        bordered>
 
-      <List.Item>
-      {ready ? (
-        <WagmiConfig config={wagmiConfig}>
-          <Component {...pageProps} />
-        </WagmiConfig>
-      ) : null}
+        <List.Item>
+          {ready ? (
+            <WagmiConfig config={wagmiConfig}>
+              <Component {...pageProps} />
+            </WagmiConfig>
+          ) : null}
 
-      <Web3Modal projectId={projectId} ethereumClient={ethereumClient} />
-      </List.Item>
-      <List.Item>
-        <p>How much would you like to invest?</p>
-      </List.Item>
-      <List.Item>
-      <InputNumber min={0} addonAfter={selectAfter} defaultValue={10} onChange={setValue} />
-      </List.Item>
+          <Web3Modal projectId={projectId} ethereumClient={ethereumClient} />
+        </List.Item>
+        {/* <List.Item>
+          <PrivyProvider
+            appId={process.env.NEXT_PUBLIC_PRIVY_APP_ID}
+            onSuccess={handleLogin}
+            config={{
+              loginMethods: ['email', 'wallet'],
+              appearance: {
+                theme: 'light',
+                accentColor: '#676FFF',
+                logo: 'https://your-logo-url',
+              },
+            }}
+          >
+            <Component {...pageProps} />
+          </PrivyProvider>
+        </List.Item> */}
+        <List.Item>
+          <p>How much would you like to invest?</p>
+        </List.Item>
+        <List.Item>
+          <InputNumber min={0} addonAfter={selectAfter} defaultValue={10} onChange={setValue} />
+        </List.Item>
 
-      <List.Item>      
-        <Button type="primary" onClick={() => alert("Investing " + value + " " + currency + " into the fund!")}>Confirm Transaction</Button>
-      </List.Item>
-    </List>
+        <List.Item>
+          <Button type="primary" onClick={() => alert("Investing " + value + " " + currency + " into the fund!")}>Confirm Transaction</Button>
+        </List.Item>
+      </List>
     </>
   );
 }

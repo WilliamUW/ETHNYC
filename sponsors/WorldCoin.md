@@ -18,6 +18,8 @@ We are leveraging (WorldCoin) to provide secure authentication login! (We want t
 
 ### Link to the code where the tech is used.
 
+https://github.com/WilliamUW/ETHNYC/blob/3b65f1be4e69e652c65de91dc48ae7cf51898453/react_frontend/components/home/welcome/Welcome.jsx#L92-L118
+
 ### How easy is it to use the API / Protocol? (1 - very difficult, 10 - very easy)
 
 10 🌟

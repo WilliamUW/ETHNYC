@@ -87,15 +87,15 @@ contract Reputable is ERC721, Ownable, AxelarExecutable {
     }
 
     function invest(uint256 _amount, uint16 _id) public payable {
-        if (_ownerOf(_id) == address(0)) revert();
-        Fund memory fund = funds[_id];
+        require(_ownerOf(_id) != address(0), "not a fund");
+        Fund storage fund = funds[_id];
         require(fund.isOpen, "not accepting investment");
         require(fund.reputation > 0, "reputation too low");
         require(msg.value == _amount, "send the correct amount");
 
         fund.eoa.call{value: _amount}("");
 
-        Fund[] memory investedFunds = investors[msg.sender];
+        Fund[] storage investedFunds = investors[msg.sender];
         fund.totalRaised += _amount;
 
         for (uint16 i; i < investedFunds.length; ) {
@@ -124,6 +124,10 @@ contract Reputable is ERC721, Ownable, AxelarExecutable {
                 value: (msg.value * investorsInFund[_id][i].sharePercentage) /
                     10000
             }("");
+
+            investorsInFund[_id][i].sharePercentage = 0;
+            investorsInFund[_id][i].amount = 0;
+
             unchecked {
                 i++;
             }
@@ -184,13 +188,13 @@ contract Reputable is ERC721, Ownable, AxelarExecutable {
         }
         if (assertedTruthfully) {
             funds[id].reputation -= 10;
-            for (uint i = 0; i < destinationChains.length; i++) {
-                setCrossChainReputation(
-                    destinationChains[i],
-                    addys[i],
-                    abi.encode(id, funds[id].reputation)
-                );
-            }
+            // for (uint i = 0; i < destinationChains.length; i++) {
+            //     setCrossChainReputation(
+            //         destinationChains[i],
+            //         addys[i],
+            //         abi.encode(id, funds[id].reputation)
+            //     );
+            // }
         }
         funds[id].assertionId = bytes32(0);
     }
@@ -200,12 +204,12 @@ contract Reputable is ERC721, Ownable, AxelarExecutable {
         Fund memory newFund = Fund(
             _repuation,
             0,
-            fundCount,
+            ++fundCount,
             true,
             _eoa,
             bytes32(0)
         );
-        funds[++fundCount] = newFund;
+        funds[fundCount] = newFund;
         _mint(_eoa, fundCount);
         // mintAllChains(_eoa);
     }
@@ -221,9 +225,9 @@ contract Reputable is ERC721, Ownable, AxelarExecutable {
         require(fund.isOpen, "already ended");
 
         for (uint16 i = 0; i < investorsInFund[_id].length; ) {
-            investorsInFund[_id][i].sharePercentage =
-                (fund.totalRaised / investorsInFund[_id][i].amount) *
-                10000;
+            investorsInFund[_id][i].sharePercentage = ((investorsInFund[_id][i]
+                .amount * 10000) / fund.totalRaised);
+
             unchecked {
                 i++;
             }

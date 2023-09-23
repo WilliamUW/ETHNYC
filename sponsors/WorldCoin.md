@@ -26,3 +26,8 @@ https://github.com/WilliamUW/ETHNYC/blob/3b65f1be4e69e652c65de91dc48ae7cf5189845
 
 ### Additional Feedback
 
+### Video Demo
+
+https://github.com/WilliamUW/ETHNYC/assets/25058545/44fd4426-7642-4026-81ba-75a77053e8e0
+
+

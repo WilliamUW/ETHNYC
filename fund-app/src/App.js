@@ -14,14 +14,14 @@ const fundData = [
     transactions: [
       {
         id: 1,
-        currency_image_url: 'usd_image.jpg',
+        currency_image_url: 'ETH.png',
         date: '2023-09-22',
-        label: 'Investment',
+        label: 'Received ETH',
         change_in_balance: '+$500',
       },
       {
         id: 2,
-        currency_image_url: 'btc_image.jpg',
+        currency_image_url: 'btc.PNG',
         date: '2023-09-21',
         label: 'Purchase Bitcoin',
         change_in_balance: '-0.05 BTC',

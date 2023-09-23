@@ -20,7 +20,7 @@ const sample_response = {
         "collectionAddress": "0xa4a226a089512f27560aec989c3d1e7c6a2958f4",
         "name": "Carbon-Neutral NFT",
         "description": "This NFT signifies this fund is carbon neutral.",
-        "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/1151803694/Environment-concept/960x0.jpg?format=jpg&width=960",
+        "imageUrl": "https://bafybeiebdwcevmkykqc4tchb2q7rukxts35pfqx3u2pnebiul5i3zc5jra.ipfs.w3s.link/sustainability.webp",
         "chain": "ETH",
         "network": "MAINNET"
       },
@@ -30,7 +30,7 @@ const sample_response = {
         "collectionAddress": "0x06012c8cf97bead5deae237070f9587f8e7a266d",
         "name": "FinTech Fund NFT",
         "description": "This NFT signifies this fund invests in the frontier of FinTech and Blockchain technologies.",
-        "imageUrl": "https://builtin.com/sites/www.builtin.com/files/styles/og/public/2022-09/fintech.png",
+        "imageUrl": "https://bafybeigzszd2dvjbfw2y6ofcthxqmsnz7wzq6ljowi7nd7vgmqhxx6asva.ipfs.w3s.link/fintech.png",
         "chain": "ETH",
         "network": "MAINNET"
       },
@@ -40,7 +40,7 @@ const sample_response = {
         "collectionAddress": "0x9d99d15997e16f0b6d2af325db32b7544c4d5e7e",
         "name": "Certified Performance NFT",
         "description": "This NFT signifies this fund has achieved YoY performance above 7%.",
-        "imageUrl": "https://cdn.anevis-solutions.com/wp-content/uploads/2016/04/26143030/performance-calculation.png",
+        "imageUrl": "https://bafybeidrubbmq24h3c6ddobfrcv5zo5bgsop2y3skgavvq6coyhhztl4je.ipfs.w3s.link/performance-calculation.png",
         "chain": "ETH",
         "network": "MAINNET"
       }

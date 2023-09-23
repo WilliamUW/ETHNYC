@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
   logoContainer: (selectedJob, item) => ({
     width: 50,
     height: 50,
-    backgroundColor: selectedJob === item.job_id ? "#FFF" : COLORS.white,
+    backgroundColor: item?.job_apply_quality_score < 0.6 ? COLORS.red : (item.job_apply_quality_score < 0.75 ? COLORS.yellow : COLORS.green),
     borderRadius: SIZES.medium,
     justifyContent: "center",
     alignItems: "center",

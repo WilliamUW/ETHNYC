@@ -36,9 +36,9 @@ Technologies Used: The Graph, Worldcoin, Airstack, WalletConnect, UMA, 1inch Net
        - Soulbound NFT if reputation gets too low     
      
 5. NFT metadata is stored with IPFS, so it never goes away **[IPFS](link here)**
+   
+7. Universal token and chain support by leveraging Axelar's cross-chain communication  **[IPFS](link here)**
 
-6. Universal token and chain support by leveraging Axelar's cross-chain communication **[IPFS](link here)**
-   - 
       
-8. 
+9. 
 

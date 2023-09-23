@@ -24,7 +24,7 @@ const Home = () => {
             <ScreenHeaderBtn iconUrl={icons.menu} dimension='60%' />
           ),
           headerRight: () => (
-            <ScreenHeaderBtn iconUrl={images.profile} dimension='100%' />
+            <ScreenHeaderBtn iconUrl={"https://noun-api.com/beta/pfp"} dimension='100%' />
           ),
           headerTitle: "",
         }}

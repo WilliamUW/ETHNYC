@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
     borderRadius: SIZES.medium,
   },
   applyBtnText: {
-    fontSize: SIZES.medium,
+    fontSize: SIZES.xxLarge,
     color: COLORS.white,
     fontFamily: FONT.bold,
   },

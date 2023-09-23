@@ -18,7 +18,7 @@ Although fund management can be especially helpful when it comes to tracking cha
 
 **Login** with WalletConnect or MetaMask to access our platform [here](link here).
 
-**Access** our Dashboard via the Web or our mobile app [directly](link here).
+**Access** our Dashboard via the Web or our app [directly](link here).
 
 ## 🚧 How we built it 
 

@@ -69,8 +69,8 @@ function App() {
               <h2>{fund.name}</h2>
               <p>Reputation Score: {fund.reputation_score}/100</p>
             </div>
-            <button onClick={() => openFundModal(fund)}>Open</button>
           </div>
+          <button onClick={() => openFundModal(fund)}>Open</button>
         </div>
       ))}
       {selectedFund && (

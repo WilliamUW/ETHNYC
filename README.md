@@ -4,7 +4,7 @@
 
 ## 💡 Inspiration 
 
-**There are no good ways to determine whether a fund is trustworthy or to dispute management of a fund. Just recently, in 2021, former Make-A-Wish Iowa CEO plead guilty to embezzling nearly $41,000. This is not an isolated case- other headlines suggest that this is a widespread issue:
+**There are no good ways to determine whether a fund is trustworthy or to dispute management of a fund.** Just recently, in 2021, former Make-A-Wish Iowa CEO plead guilty to embezzling nearly *$41,000*. This is not an isolated case- other headlines suggest that this is a widespread issue:
 
 * "FTC wants AmeriDebt founder to refund $172 million" (Ambrose 2005)
 * "fAs charitable cheating rises, so does cost to taxpayers" (USA Today 2005) 

@@ -26,6 +26,7 @@ Technologies Used: The Graph, Worldcoin, Airstack, WalletConnect, UMA, 1inch Net
 
 1. We are leveraging **[WorldCoin's World ID](link here)** to provide secure authentication login! (We want to make sure real people are filing disputes!)
    - User privacy is preserved using Polygon ID's Verifiable Credentials **[Polygon](link here)**.
+   - Universal wallet acceptance using WalletConnect **[WalletConnect](link here)**
    - Additionally, account abstraction is implemented using Biconomy  **[Biconomy](link here)**.
 
 3. We leveraged **[Nouns](link here)'s NFT API** to create NFT badges representative of each fund.
@@ -36,7 +37,8 @@ Technologies Used: The Graph, Worldcoin, Airstack, WalletConnect, UMA, 1inch Net
      
 5. NFT metadata is stored with IPFS, so it never goes away **[IPFS](link here)**
 
-6. 
+6. Universal token and chain support by leveraging Axelar's cross-chain communication **[IPFS](link here)**
+   - 
       
-7. 
+8. 
 

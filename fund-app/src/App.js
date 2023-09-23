@@ -99,7 +99,7 @@ function App() {
                     <p>Label: {transaction.label}</p>
                     <p>Change in Balance: {transaction.change_in_balance}</p>
                   </div>
-                  <button>Dispute</button>
+                  <button className="dispute-button">Dispute</button>
                 </li>
               ))}
             </ul>

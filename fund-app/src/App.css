@@ -60,3 +60,17 @@
 .fund-header h2 {
   margin-right: 10px;
 }
+/* Add these styles at the end of your CSS file */
+
+.currency-image {
+  margin-right: 20px; /* Add margin to the right of the currency image */
+}
+
+.transaction-details {
+  flex: 1;
+  margin-right: 20px; /* Add margin to the right of the transaction details */
+}
+
+.dispute-button {
+  margin-top: 20px; /* Add margin above the "Dispute" button */
+}

@@ -61,7 +61,7 @@ function App() {
   const handleDisputeButtonClick = (transaction) => {
     // Display an alert with transaction details
     alert(
-      `Transaction Details:\nDate: ${transaction.date}\nLabel: ${transaction.label}\nChange in Balance: ${transaction.change_in_balance}`
+      `Would you like to dispute the following transaction? \n\n Transaction Details:\nDate: ${transaction.date}\nLabel: ${transaction.label}\nChange in Balance: ${transaction.change_in_balance}`
     );
   };
 

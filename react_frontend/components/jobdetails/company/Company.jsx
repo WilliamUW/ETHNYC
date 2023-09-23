@@ -4,8 +4,9 @@ import { View, Text, Image } from "react-native";
 import styles from "./company.style";
 import { icons } from "../../../constants";
 import { checkImageURL } from "../../../utils";
+import { COLORS, FONT, SHADOWS, SIZES } from "../../../constants";
 
-const Company = ({ companyLogo, jobTitle, companyName, location }) => {
+const Company = ({ companyLogo, jobTitle, companyName, location, reputation }) => {
   return (
     <View style={styles.container}>
       <View style={styles.logoBox}>
@@ -22,6 +23,7 @@ const Company = ({ companyLogo, jobTitle, companyName, location }) => {
       <View style={styles.jobTitleBox}>
         <Text style={styles.jobTitle}>{jobTitle}</Text>
       </View>
+      
 
       <View style={styles.companyInfoBox}>
         <Text style={styles.companyName}>{companyName} / </Text>
@@ -33,6 +35,11 @@ const Company = ({ companyLogo, jobTitle, companyName, location }) => {
           />
           <Text style={styles.locationName}>{location}</Text>
         </View>
+      </View>
+
+      <View style={styles.companyInfoBox}>
+        <Text style={{    backgroundColor: reputation < 0.6 ? COLORS.red : (reputation < 0.75 ? COLORS.yellow : COLORS.green),
+}}> Reputation: {Math.round(10000*reputation)/100}% </Text>
       </View>
     </View>
   );

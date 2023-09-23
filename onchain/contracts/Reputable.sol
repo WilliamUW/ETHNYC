@@ -4,8 +4,11 @@ import "solady/src/tokens/ERC721.sol";
 import "@openzeppelin/contracts/utils/Strings.sol";
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
+import {AncillaryData} from "./uma/AncillaryData.sol";
+import {OptimisticOracleV3Interface} from "./uma/OptimisticOracleV3Interface.sol";
+import {OptimisticOracleV3CallbackRecipientInterface} from "./uma/OptimisticOracleV3CallbackRecipientInterface.sol";
 
-contract TokenTrove is ERC721, Ownable {
+contract Reputable is ERC721, Ownable {
     using Strings for uint;
 
     string highRep;
@@ -19,11 +22,12 @@ contract TokenTrove is ERC721, Ownable {
     }
 
     struct Fund {
-        uint256 repuation;
+        uint256 reputation;
         uint256 totalRaised;
         uint16 id;
         bool isOpen;
         address eoa;
+        bytes32 assertionId;
     }
 
     mapping(address => Fund[]) public investors;
@@ -36,6 +40,8 @@ contract TokenTrove is ERC721, Ownable {
 
     uint256 public constant MAX_REPUTATION = 100;
     uint16 public fundCount;
+
+    OptimisticOracleV3Interface private _disputeOracle;
 
     modifier onlyFunds(uint16 _id) {
         require(funds[_id].eoa == msg.sender);
@@ -54,7 +60,7 @@ contract TokenTrove is ERC721, Ownable {
         if (address(_token) != address(0)) {
             IERC20(_token).transferFrom(msg.sender, fund.eoa, _amount);
         } else {
-            require(fund.repuation > 0, "reputation too low");
+            require(fund.reputation > 0, "reputation too low");
             require(msg.value == _amount, "send the correct amount");
             fund.eoa.call{value: _amount}("");
         }
@@ -92,8 +98,72 @@ contract TokenTrove is ERC721, Ownable {
         }
     }
 
+    function assertBadReputation(uint16 _id) public {
+        require(address(_disputeOracle) != address(0));
+        require(funds[_id].assertionId == bytes32(0));
+        bytes memory claim = abi.encodePacked(
+            "Fund 0x",
+            AncillaryData.toUtf8BytesUint(_id),
+            "did something suspicious with the funds"
+        );
+
+        funds[_id].assertionId = _disputeOracle.assertTruthWithDefaults(
+            claim,
+            address(this)
+        );
+    }
+
+    function settleAndGetAssertionResult(uint16 _id) public returns (bool) {
+        return
+            _disputeOracle.settleAndGetAssertionResult(funds[_id].assertionId);
+    }
+
+    function getAssertionResult(uint16 _id) public view returns (bool) {
+        return _disputeOracle.getAssertionResult(funds[_id].assertionId);
+    }
+
+    function getAssertion(
+        uint16 _id
+    ) public view returns (OptimisticOracleV3Interface.Assertion memory) {
+        return _disputeOracle.getAssertion(funds[_id].assertionId);
+    }
+
+    function disputeBadRepAssurtion(uint16 _id) public {
+        if (address(_disputeOracle) != address(0)) {
+            _disputeOracle.disputeAssertion(funds[_id].assertionId, msg.sender);
+        }
+    }
+
+    function assertionResolvedCallback(
+        bytes32 assertionId,
+        bool assertedTruthfully
+    ) external {
+        require(msg.sender == address(_disputeOracle));
+        uint16 id;
+        for (uint16 i = 0; i < fundCount; ) {
+            if (funds[i].assertionId == assertionId) {
+                id = i;
+            }
+
+            unchecked {
+                i++;
+            }
+        }
+        if (assertedTruthfully) {
+            funds[id].reputation -= 10;
+        }
+        funds[id].assertionId = bytes32(0);
+    }
+
     function addFund(address _eoa) public onlyOwner {
-        Fund memory newFund = Fund(MAX_REPUTATION, 0, fundCount, false, _eoa);
+        Fund memory newFund = Fund(
+            MAX_REPUTATION,
+            0,
+            fundCount,
+            false,
+            _eoa,
+            bytes32(0)
+        );
         funds[++fundCount] = newFund;
         _mint(_eoa, fundCount);
         // mintAllChains(_eoa);
@@ -101,7 +171,7 @@ contract TokenTrove is ERC721, Ownable {
 
     function removeFund(uint16 _id) public onlyOwner {
         require(_ownerOf(_id) != address(0));
-        funds[_id] = Fund(0, 0, 0, false, address(0));
+        funds[_id] = Fund(0, 0, 0, false, address(0), bytes32(0));
         _burn(_id);
     }
 
@@ -118,6 +188,22 @@ contract TokenTrove is ERC721, Ownable {
             }
         }
         fund.isOpen = false;
+    }
+
+    function assertionDisputedCallback(bytes32 assertionId) external {
+        require(msg.sender == address(_disputeOracle));
+        uint16 id;
+        for (uint16 i = 0; i < fundCount; ) {
+            if (funds[i].assertionId == assertionId) {
+                id = i;
+            }
+
+            unchecked {
+                i++;
+            }
+        }
+
+        funds[id].assertionId = bytes32(0);
     }
 
     function _beforeTokenTransfer(
@@ -140,9 +226,9 @@ contract TokenTrove is ERC721, Ownable {
         uint256 _id
     ) public view override returns (string memory) {
         Fund memory rep = funds[uint16(_id)];
-        if (rep.repuation < 90) {
+        if (rep.reputation < 90) {
             return medRep;
-        } else if (rep.repuation < 50) {
+        } else if (rep.reputation < 50) {
             return lowRep;
         }
         return highRep;

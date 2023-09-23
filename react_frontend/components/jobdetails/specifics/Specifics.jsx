@@ -110,7 +110,7 @@ function DisputeList({ disputes }) {
           <div className="dispute-result">
             <p><strong>Change in Reputation:</strong> {dispute.changeInReputation}</p>
           </div>
-          <Button type="primary">View Dispute Details</Button>
+          <Button type="primary" onClick={() => alert("https://etherscan.io/tx/" + dispute.transactionHash)}>View Dispute Details</Button>
         </List.Item>
       ))}
     </List>

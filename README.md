@@ -32,7 +32,7 @@ Technologies Used: The Graph, Worldcoin, Airstack, WalletConnect, UMA, 1inch Net
    - NFTs minted using **QuickNode** **[QuickNode](link here)**
    - Unlock for membership NFTs, token gated access to investor only documentation **Unlock** **[unlock](link here)**
    - NFTs based on reputation
-      Soulbound NFT if reputation gets too low
+         Soulbound NFT if reputation gets too low
 
      
 5. - 

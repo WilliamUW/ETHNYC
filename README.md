@@ -25,7 +25,7 @@ Although fund management can be especially helpful when it comes to tracking cha
 Technologies Used: The Graph, Worldcoin, Airstack, WalletConnect, UMA, 1inch Network, Uniswap Foundation, Gnosis Chain, Aave, Polygon, Arbitrum, Scroll, Base, Axiom, Apecoin, Biconomy, QuickNode, Filecoin
 
 1. We are leveraging **[WorldCoin's World ID](link here)** to provide secure authentication login! (We want to make sure real people are filing disputes!)
-   - User privacy is further preserved using Polygon ID's Verifiable Credentials **[Polygon](link here)**.
+   - User privacy is preserved using Polygon ID's Verifiable Credentials **[Polygon](link here)**.
    - Additionally, account abstraction is implemented using Biconomy  **[Biconomy](link here)**.
 
 3. We leveraged **[Nouns](link here)'s NFT API** to create NFT badges representative of each fund.

@@ -112,7 +112,7 @@ const response = {
                 "employer_company_type": "Staffing",
                 "job_publisher": "Fidelity",
                 "job_id": "3x447t60mtWxeDneAAAAAA==",
-                "job_employment_type": "TEMPORARY",
+                "job_employment_type": "Stocks",
                 "job_title": "Mutual Fund",
                 "job_apply_link": "https://www.roberthalf.com/us/en/job/atlanta-ga/react-native-developer/00900-9503785637-usen",
                 "job_apply_is_direct": false,

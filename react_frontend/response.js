@@ -10,7 +10,7 @@ const response = {
         "data": [
             {
                 "employer_name": "Vanguard",
-                "employer_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLhl3MAdZw-k3O_hKnRkKj2e0fYcttjkDr3Wpd&s=0",
+                "employer_logo": "https://asset.brandfetch.io/idf3bcOruF/idez9tvu_u.png",
                 "employer_website": null,
                 "employer_company_type": null,
                 "job_publisher": "LinkedIn",
@@ -19,7 +19,7 @@ const response = {
                 "job_title": "Mutual Fund (Mid-Level)",
                 "job_apply_link": "https://www.linkedin.com/jobs/view/react-native-developer-mid-level-at-red-technologies-3725941323",
                 "job_apply_is_direct": false,
-                "job_apply_quality_score": 0.6444,
+                "job_apply_quality_score": 0.8444,
                 "apply_options": [
                     {
                         "publisher": "LinkedIn",
@@ -107,7 +107,7 @@ const response = {
             },
             {
                 "employer_name": "Fidelity",
-                "employer_logo": "https://www.roberthalf.com/sites/default/files/rh-logo-rgb.jpg",
+                "employer_logo": "https://logodownload.org/wp-content/uploads/2021/05/fidelity-investments-logo-0.png",
                 "employer_website": "http://www.rhi.com",
                 "employer_company_type": "Staffing",
                 "job_publisher": "Fidelity",
@@ -205,8 +205,8 @@ const response = {
                 "job_naics_name": "Employment Placement Agencies"
             },
             {
-                "employer_name": "Resource Marketing",
-                "employer_logo": null,
+                "employer_name": "HSBC",
+                "employer_logo": "https://cdn.icon-icons.com/icons2/2699/PNG/512/hsbc_logo_icon_170012.png",
                 "employer_website": null,
                 "employer_company_type": null,
                 "job_publisher": "Blackrock",
@@ -215,7 +215,7 @@ const response = {
                 "job_title": "FinTech Fund and Mutual Fund",
                 "job_apply_link": "https://www.Blackrock.com/job/f67DzFaaYOeNT6ipWdDe71JvZq1XQaYGzNdY3Oosf4kpsV01FqrnxQ",
                 "job_apply_is_direct": false,
-                "job_apply_quality_score": 0.5659,
+                "job_apply_quality_score": 0.6659,
                 "apply_options": [
                     {
                         "publisher": "Blackrock",
@@ -281,8 +281,8 @@ const response = {
                 "job_onet_job_zone": "3"
             },
             {
-                "employer_name": "Homebase",
-                "employer_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwR3C7gB7DLVUadFMvfSz0nofsesPVs_6K2dYL&s=0",
+                "employer_name": "RBC",
+                "employer_logo": "https://1000logos.net/wp-content/uploads/2018/10/RBC-Logo.png",
                 "employer_website": "http://joinhomebase.com",
                 "employer_company_type": null,
                 "job_publisher": "Bank of America",
@@ -419,7 +419,7 @@ const response = {
             },
             {
                 "employer_name": "Silicon Valley Bank",
-                "employer_logo": "https://image.status.io/z6aeO6kAGsAG.png",
+                "employer_logo": "https://upload.wikimedia.org/wikipedia/commons/3/3b/SVB_Financial_Group_logo.svg",
                 "employer_website": "http://www.elance.com",
                 "employer_company_type": "Computer Services",
                 "job_publisher": "Silicon Valley Bank",
@@ -428,7 +428,7 @@ const response = {
                 "job_title": "React & Mutual Fund - Long Term",
                 "job_apply_link": "https://www.Silicon Valley Bank.com/freelance-jobs/apply/React-React-Native-Developer-Long-Term_~01e27e84db04afc030/",
                 "job_apply_is_direct": true,
-                "job_apply_quality_score": 0.6833,
+                "job_apply_quality_score": 0.1833,
                 "apply_options": [
                     {
                         "publisher": "Silicon Valley Bank",
@@ -491,7 +491,7 @@ const response = {
             },
             {
                 "employer_name": "Silicon Valley Bank",
-                "employer_logo": "https://image.status.io/z6aeO6kAGsAG.png",
+                "employer_logo": "https://loremflickr.com/g/240/240?random=6",
                 "employer_website": "http://www.elance.com",
                 "employer_company_type": "Computer Services",
                 "job_publisher": "Silicon Valley Bank",
@@ -561,7 +561,7 @@ const response = {
             },
             {
                 "employer_name": "Dice",
-                "employer_logo": "https://s24.q4cdn.com/133441296/files/images/brands/dice.png",
+                "employer_logo": "https://loremflickr.com/g/240/240/bank,professional,finance/all?random=7",
                 "employer_website": null,
                 "employer_company_type": "Information",
                 "job_publisher": "LinkedIn",
@@ -640,7 +640,7 @@ const response = {
             },
             {
                 "employer_name": "TechnoSphere, Inc.",
-                "employer_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBHLJypEXJoKpCRLPgS_6htUoGgVkfxhY0CZGY&s=0",
+                "employer_logo": "https://loremflickr.com/g/240/240/bank,professional,finance/all?random=8",
                 "employer_website": null,
                 "employer_company_type": null,
                 "job_publisher": "LinkedIn",
@@ -749,7 +749,7 @@ const response = {
             },
             {
                 "employer_name": "Puresoft, Inc.",
-                "employer_logo": null,
+                "employer_logo": "https://loremflickr.com/g/240/240/bank,professional,finance/all?random=9",
                 "employer_website": null,
                 "employer_company_type": null,
                 "job_publisher": "Salary.com",
@@ -821,7 +821,7 @@ const response = {
             },
             {
                 "employer_name": "Silicon Valley Bank",
-                "employer_logo": null,
+                "employer_logo": "https://loremflickr.com/g/240/240/bank,professional,finance/all?random=10",
                 "employer_website": null,
                 "employer_company_type": null,
                 "job_publisher": "Silicon Valley Bank",

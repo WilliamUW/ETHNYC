@@ -20,9 +20,8 @@ glossary = {
     "votesRevealed": "Number of votes revealed by the wallet address.."
 }
 
-glossary_list = [[key, value] for key, value in glossary.items()]
-
-st.table(glossary_list)
+df_glossary = pd.DataFrame(glossary.items(), columns=["Field", "Description"])
+st.table(df_glossary)
 
 # Input for the blockchain wallet address
 wallet_address = st.text_input("UMA Wallet Address:", "0x000000aaee6a496aaf7b7452518781786313400f")

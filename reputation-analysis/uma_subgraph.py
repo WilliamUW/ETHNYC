@@ -1,5 +1,7 @@
 import requests
 import pandas as pd
+import json
+import numpy as np
 
 # The UMA subgraph indexes data from UMA contracts over time. It organizes data
 # about tokenholders, contracts, DVM requests, voting, and more. The subgraph
@@ -69,21 +71,6 @@ def userDescendingByNumVotes():
     """
     return to_dataframe('users', query)
 
-def user(id):
-    query = f"""
-    query {{
-        user(id: "{id}") {{
-            id
-            address
-            countReveals
-            countRetrievals
-            votesCommited
-        }}
-    }}
-    """
-    json_data = fetch_data_from_query(query)
-    return pd.DataFrame(json_data['data']['user'], index=[0])
-
 def priceRequests(ascending=True, num=None):
     direction = "asc" if ascending else "desc"
     limit = f"(first: {num})" if num else ""
@@ -144,9 +131,40 @@ def firstUsers(num):
     """
     return to_dataframe('users', query)
 
+def find_user_by_address(address: str) -> pd.DataFrame:
+    """Find a user by a specific UMA address."""
+    query = f"""
+    {{
+        users(where: {{id: "{address}"}}, subgraphError: allow) {{
+            countRetrievals
+            countReveals
+            id
+            votesCommited(first: 10) {{
+                id
+            }}
+            votesRevealed(first: 10) {{
+                price
+                numTokens
+                voter {{
+                    address
+                    countRetrievals
+                    countReveals
+                    id
+                    votesCommited
+                    votesRevealed
+                }}
+            }}
+            address
+        }}   
+    }}
+    """
+    
+    return to_dataframe('users', query)
+
+
 def main():
-    print(voterGroups(5))
-    print(userDescendingByNumCorrectVotes())
+    df = find_user_by_address("0x000000aaee6a496aaf7b7452518781786313400f")
+    print(df)
     return
 
 if __name__ == "__main__":

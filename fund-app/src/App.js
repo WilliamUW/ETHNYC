@@ -2,6 +2,22 @@ import React, { useState } from 'react';
 import './App.css';
 import { Web3Button } from '@web3modal/react'
 
+import { EthereumClient, w3mConnectors, w3mProvider } from '@web3modal/ethereum'
+import { Web3Modal } from '@web3modal/react'
+import { configureChains, createConfig, WagmiConfig } from 'wagmi'
+import { arbitrum, mainnet, polygon } from 'wagmi/chains'
+
+const chains = [arbitrum, mainnet, polygon]
+const projectId = 'cd2c1ad034a54bf3f4d330d1695db065'
+
+const { publicClient } = configureChains(chains, [w3mProvider({ projectId })])
+const wagmiConfig = createConfig({
+  autoConnect: true,
+  connectors: w3mConnectors({ projectId, chains }),
+  publicClient
+})
+const ethereumClient = new EthereumClient(wagmiConfig, chains)
+
 
 // Sample fund data (you should replace this with your actual data)
 const fundData = [
@@ -91,6 +107,8 @@ const fundData = [
   
     return (
       <div className="App">
+
+
         <h1>Fund List</h1>
         <div className="search-filter">
           <input
@@ -189,3 +207,4 @@ const fundData = [
   }
   
   export default App;
+

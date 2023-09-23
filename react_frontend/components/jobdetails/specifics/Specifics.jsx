@@ -132,12 +132,11 @@ const Specifics = ({ title, points }) => {
 
 
         <p></p>
-        {points.map((item, index) => (
-          <View style={styles.pointWrapper} key={item + index}>
-            <View style={styles.pointDot} />
-            <Text style={styles.pointText}>{item}</Text>
-          </View>
-        ))}
+        <iframe
+        src="https://reputable.streamlit.app/?embedded=true"
+        height="550"
+        style={{width:"100%", border:"none"}}
+        ></iframe>
       </View>}
 
       {title == "Disputes" && 

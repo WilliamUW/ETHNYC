@@ -11,6 +11,18 @@ import "../styles.css";
 
 import { List } from 'antd'
 
+import { MetaMaskSDK } from '@metamask/sdk';
+
+// const options = {dappMetadata: {name: "My Dapp", url: "https://mydapp.com"}}
+
+// const MMSDK = new MetaMaskSDK(options);
+
+// const ethereum = MMSDK.getProvider(); // You can also access via window.ethereum
+
+// ethereum.request({ method: 'eth_requestAccounts', params: [] });
+
+
+
 
 // 1. Get projectID at https://cloud.walletconnect.com
 if (!process.env.NEXT_PUBLIC_PROJECT_ID) {
@@ -43,7 +55,7 @@ export default function App({ Component, pageProps }) {
     <>
         <List
           header={<div>Connect with your preferred funding method!</div>}
-          footer={<div>Footer</div>}
+          footer={<div>Reach out to our AI assistant</div>}
           bordered>
 
       <List.Item>

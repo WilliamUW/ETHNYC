@@ -22,7 +22,7 @@ Although fund management can be especially helpful when it comes to tracking cha
 
 ## 🚧 How we built it 
 
-Technologies Used: The Graph, Worldcoin, Airstack, WalletConnect, UMA, 1inch Network, Uniswap Foundation, Gnosis Chain, Aave, Polygon, Arbitrum, Scroll, Base, Axiom, Apecoin, Biconomy, QuickNode, Filecoin, Axlear
+Technologies Used: The Graph, Worldcoin, Airstack, WalletConnect, UMA, 1inch Network, Uniswap Foundation, Gnosis Chain, Aave, Polygon, Arbitrum, Base, Axiom, Apecoin, Biconomy, QuickNode, Filecoin, Axlear
 
 1. We are leveraging **([WorldCoin](https://github.com/WilliamUW/ETHNYC/blob/main/sponsors/WorldCoin.md))** to provide secure authentication login! (We want to make sure real people are filing disputes!)
    - User privacy is preserved using **([Polygon](https://github.com/WilliamUW/ETHNYC/blob/main/sponsors/Polygon.md))**  ID's Verifiable Credentials  
@@ -43,7 +43,7 @@ Technologies Used: The Graph, Worldcoin, Airstack, WalletConnect, UMA, 1inch Net
 
 5. 
 
-Check out our [ETHGlobal page](link here)! Reputable.ai is an [ETHGlobal Waterloo](https://ethglobal.com/events/waterloo2023](https://ethglobal.com/events/newyork2023) project.
+Check out our [ETHGlobal page](link here)! Reputable.ai is an ([ETHGlobal Waterloo](https://ethglobal.com/events/waterloo2023](https://ethglobal.com/events/newyork2023))** project.
 
 ## Pitch
 

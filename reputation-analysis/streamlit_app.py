@@ -12,15 +12,20 @@ def get_data_for_wallet(wallet_address):
 
 st.title("UMA Disputes Analysis")
 
-st.markdown("""
-## Glossary
-- **address**: The unique wallet address.
-- **countRetrievals**: Provides a lower bound on the number of votes a user has correctly voted for. Users may not have retrieved rewards for all of their correct votes.
-- **countReveals**: Number of price requests that this user has revealed a vote for, and therefore participated in as a voter.
-- **votesCommited**: [Provide a description for this field].
-- **votesRevealed**: [Provide a description for this field].
-- **id**: [Provide a description for this field].
-""")
+glossary = { 
+    "address": "The unique wallet address.",
+    "countRetrievals": "Provides a lower bound on the number of votes a user has correctly voted for. Users may not have retrieved rewards for all of their correct votes.",
+    "countReveals": "Number of price requests that this wallet address has revealed a vote for, and therefore participated in as a voter.",
+    "votesCommited": "Number of votes committed by the wallet address.",
+    "votesRevealed": "Number of votes revealed by the wallet address.."
+}
+
+st.sidebar.title("Glossary")
+
+for term, definition in glossary.items():
+    st.sidebar.write(f"**{term}**: {definition}")
+
+#glossary_list = [[key, value] for key, value in glossary.items()]
 
 # Input for the blockchain wallet address
 wallet_address = st.text_input("UMA Wallet Address:", "0x000000aaee6a496aaf7b7452518781786313400f")

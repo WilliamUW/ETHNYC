@@ -4,8 +4,13 @@
 
 ### Prize Requirements
 
-1.  Best build of an Innovative Application on top of 1inch Network's Fusion API gets $2,500
-2.  Best build of Innovative Solutions on top of 1inch Network's Token Plugins gets $2,500
+Bounty 1: Build an Innovative Application on top of 1inch Network's Fusion API  
+  
+Prize Amount: 🥇 First place: $2,500USD  🥈 Second place: $1,500 USD 🥉 Third place: $1,000USD
+  
+Bounty 2: Build Innovative Solutions on top of 1inch Network's Token Plugins
+
+  Prize Amount: 🥇 First place: $2,500USD 🥈 Second place: $1,500 USD 🥉 Third place: $1,000USD
 
 ### Please add a sentence or two on why you're applicable for this prize.
 

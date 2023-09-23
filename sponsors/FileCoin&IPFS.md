@@ -4,7 +4,7 @@
 
 ### Prize Requirements
 
-1. Top 3 best innovations that turn current web services and applications into more open, equitable, secure, and resilient get $2500 each
+🏆 Grand Prizes: 3 teams x $2500 (paid in FIL) 🏊 Pool Prize: $12500, up to 15 teams, capped at $1250 per team (paid in FIL)
 
 ### Please add a sentence or two on why you're applicable for this prize.
 

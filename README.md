@@ -43,7 +43,7 @@ Technologies Used: The Graph, Worldcoin, Airstack, WalletConnect, UMA, 1inch Net
 
 5. 
 
-Check out our [ETHGlobal page](link here)! Reputable.ai is an **([ETHGlobal Waterloo](https://ethglobal.com/events/waterloo2023](https://ethglobal.com/events/newyork2023))** project.
+Check out our [ETHGlobal page](link here)! Reputable.ai is an **([ETHGlobal Waterloo](https://ethglobal.com/events/waterloo2023](https://ethglobal.com/events/newyork2023)))** project.
 
 ## Pitch
 

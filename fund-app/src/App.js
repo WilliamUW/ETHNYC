@@ -86,19 +86,20 @@ function App() {
             <h3>Transactions</h3>
             <ul className="transaction-list">
               {selectedFund.transactions.map((transaction) => (
-                <li key={transaction.id} className="transaction-panel">
+                <li key={transaction.id} className="fund-panel">
                   <img
                     src={transaction.currency_image_url}
                     alt="Currency"
                     className="currency-image"
-                    height="200"
-                    width="200"
+                    height="100"
+                    width="100"
                   />
                   <div className="transaction-details">
                     <p>Date: {transaction.date}</p>
                     <p>Label: {transaction.label}</p>
                     <p>Change in Balance: {transaction.change_in_balance}</p>
                   </div>
+                  <button>Dispute</button>
                 </li>
               ))}
             </ul>

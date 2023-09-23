@@ -30,7 +30,7 @@ Technologies Used: The Graph, Worldcoin, Airstack, WalletConnect, UMA, 1inch Net
       -   Compatible with **([Apecoin](https://github.com/WilliamUW/ETHNYC/blob/main/sponsors/Apecoin.md))** 
    - Additionally, account abstraction is implemented using **([Biconomy](https://github.com/WilliamUW/ETHNYC/blob/main/sponsors/Biconomy.md))**.
 
-2. We leveraged **([Nouns](https://github.com/WilliamUW/ETHNYC/blob/main/sponsors/Nouns.md))** to generate unique user profile pictures based on the user's reputation and further protect user privacy 
+2. We leveraged **([Nouns](https://github.com/WilliamUW/ETHNYC/blob/main/sponsors/Nouns.md))** to generate unique user profile pictures based on the user's reputation  
    
 3. Fund NFTs minted using **([QuickNode](https://github.com/WilliamUW/ETHNYC/blob/main/sponsors/QuickNode.md))**
    - Unlock for membership NFTs, token gated access to investor only documentation **Unlock** **[unlock](link here)**

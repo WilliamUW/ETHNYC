@@ -3,5 +3,6 @@ web3modal-working/.next/
 web3modal-working/node_modules/
 fund-app/node_modules/
 react_frontend/node_modules/
+node_modules/
 
 .DS_Store

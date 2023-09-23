@@ -33,17 +33,29 @@ const safeService = new SafeApiKit({
 //   await safeService.getTransactionConfirmations(safeTxHash)
 
 // get incoming transactions
-const incomingTxs: TransferListResponse = 
- await safeService.getIncomingTransactions(safeOwner)
 
-// get multisig transactions
-const multisigTxs: SafeMultisigTransactionListResponse = 
- await safeService.getMultisigTransactions(
-  safeOwner
-  )
+async function main() {
+  // get incoming transactions
+  const incomingTxs = await safeService.getIncomingTransactions(safeOwner);
 
-// get pending transaction
-const pendingTxs: SafeMultisigTransactionListResponse = 
- await safeService.getPendingTransactions(
-  safeOwner
-  )
+  // get multisig transactions
+  const multisigTxs = await safeService.getMultisigTransactions(safeOwner);
+
+  // get pending transaction
+  const pendingTxs = await safeService.getPendingTransactions(safeOwner);
+
+}
+// const incomingTxs: TransferListResponse = 
+//  await safeService.getIncomingTransactions(safeOwner)
+
+// // get multisig transactions
+// const multisigTxs: SafeMultisigTransactionListResponse = 
+//  await safeService.getMultisigTransactions(
+//   safeOwner
+//   )
+
+// // get pending transaction
+// const pendingTxs: SafeMultisigTransactionListResponse = 
+//  await safeService.getPendingTransactions(
+//   safeOwner
+//   )

@@ -20,12 +20,9 @@ glossary = {
     "votesRevealed": "Number of votes revealed by the wallet address.."
 }
 
-st.sidebar.title("Glossary")
+glossary_list = [[key, value] for key, value in glossary.items()]
 
-for term, definition in glossary.items():
-    st.sidebar.write(f"**{term}**: {definition}")
-
-#glossary_list = [[key, value] for key, value in glossary.items()]
+st.table(glossary_list)
 
 # Input for the blockchain wallet address
 wallet_address = st.text_input("UMA Wallet Address:", "0x000000aaee6a496aaf7b7452518781786313400f")

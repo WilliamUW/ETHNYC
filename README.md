@@ -29,15 +29,15 @@ Technologies Used: The Graph, Worldcoin, Airstack, WalletConnect, UMA, 1inch Net
    - Universal wallet acceptance using **([WalletConnect](https://github.com/WilliamUW/ETHNYC/blob/main/sponsors/WalletConnect.md))**
    - Additionally, account abstraction is implemented using **([Biconomy](https://github.com/WilliamUW/ETHNYC/blob/main/sponsors/Biconomy.md))**.
 
-3. We leveraged **[Nouns](https://github.com/WilliamUW/ETHNYC/blob/main/sponsors/Nouns.md))'s NFT API** to create NFT badges representative of each fund.
+3. We leveraged **([Nouns](https://github.com/WilliamUW/ETHNYC/blob/main/sponsors/Nouns.md))'s NFT API** to create NFT badges representative of each fund.
    - NFTs minted using **([QuickNode](https://github.com/WilliamUW/ETHNYC/blob/main/sponsors/QuickNode.md)**
    - Unlock for membership NFTs, token gated access to investor only documentation **Unlock** **[unlock](link here)**
        - Based on reputation
        - Soulbound NFT if reputation gets too low     
      
-5. NFT metadata is stored with IPFS, so it never goes away **[IPFS](link here)**
+5. NFT metadata is stored with **([IPFS](https://github.com/WilliamUW/ETHNYC/blob/main/sponsors/IPFS.md))**, so it never goes away 
    
-7. Universal token and chain support by leveraging Axelar's cross-chain communication  **[IPFS](link here)**
+7. Universal token and chain support by leveraging **[Axlear](link here)**'s cross-chain communication 
 
       
 9. 

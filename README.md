@@ -22,15 +22,23 @@ Although fund management can be especially helpful when it comes to tracking cha
 
 ## 🚧 How we built it 
 
-Technologies Used: The Graph, Worldcoin, Airstack, WalletConnect, UMA, 1inch Network, Uniswap Foundation, Gnosis Chain, Aave, Polygon, Arbitrum, Scroll, Base, Axiom, Apecoin, Biconomy,
-QuickNode, Filecoin
-1. We are leveraging
-2. 
-3. We leveraged 
-      
-4. 
+Technologies Used: The Graph, Worldcoin, Airstack, WalletConnect, UMA, 1inch Network, Uniswap Foundation, Gnosis Chain, Aave, Polygon, Arbitrum, Scroll, Base, Axiom, Apecoin, Biconomy, QuickNode, Filecoin
 
-5.
-       
-  
-6. 
+1. We are leveraging **([WorldCoin](https://github.com/WilliamUW/ETHNYC/blob/main/sponsors/WorldCoin.md))** to provide secure authentication login! (We want to make sure real people are filing disputes!)
+   - User privacy is preserved using **([Polygon](https://github.com/WilliamUW/ETHNYC/blob/main/sponsors/Polygon.md))**  ID's Verifiable Credentials  
+   - Universal wallet acceptance using **([WalletConnect](https://github.com/WilliamUW/ETHNYC/blob/main/sponsors/WalletConnect.md))**
+   - Additionally, account abstraction is implemented using **([Biconomy](https://github.com/WilliamUW/ETHNYC/blob/main/sponsors/Biconomy.md))**.
+
+3. We leveraged **([Nouns](https://github.com/WilliamUW/ETHNYC/blob/main/sponsors/Nouns.md))'s NFT API** to create NFT badges representative of each fund.
+   - NFTs minted using **([QuickNode](https://github.com/WilliamUW/ETHNYC/blob/main/sponsors/QuickNode.md)**
+   - Unlock for membership NFTs, token gated access to investor only documentation **Unlock** **[unlock](link here)**
+       - Based on reputation
+       - Soulbound NFT if reputation gets too low     
+     
+5. NFT metadata is stored with **([IPFS](https://github.com/WilliamUW/ETHNYC/blob/main/sponsors/IPFS.md))**, so it never goes away 
+   
+7. Universal token and chain support by leveraging **[Axlear](link here)**'s cross-chain communication 
+
+      
+9. 
+

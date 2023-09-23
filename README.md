@@ -22,15 +22,21 @@ Although fund management can be especially helpful when it comes to tracking cha
 
 ## 🚧 How we built it 
 
-Technologies Used: The Graph, Worldcoin, Airstack, WalletConnect, UMA, 1inch Network, Uniswap Foundation, Gnosis Chain, Aave, Polygon, Arbitrum, Scroll, Base, Axiom, Apecoin, Biconomy,
-QuickNode, Filecoin
-1. We are leveraging
-2. 
-3. We leveraged 
-      
-4. 
+Technologies Used: The Graph, Worldcoin, Airstack, WalletConnect, UMA, 1inch Network, Uniswap Foundation, Gnosis Chain, Aave, Polygon, Arbitrum, Scroll, Base, Axiom, Apecoin, Biconomy, QuickNode, Filecoin
 
-5.
-       
-  
+1. We are leveraging **[WorldCoin's World ID](link here)** to provide secure authentication login! (We want to make sure real people are filing disputes!)
+   - User privacy is further preserved using Polygon ID's Verifiable Credentials **[Polygon](https://github.com/saccharinedreams/Goose.ai/blob/main/sponsors/Polygon.md))**.
+   - Additionally, account abstraction is implemented using Biconomy  **[Biconomy](https://github.com/saccharinedreams/Goose.ai/blob/main/sponsors/Polygon.md))**.
+
+3. We leveraged **[Nouns](link here)'s NFT API** to create NFT badges representative of each fund.
+   - NFTs minted using **QuickNode** **[QuickNode](link here)**
+     
+4. - 
+
+
+
+5. 
 6. 
+      
+7. 
+

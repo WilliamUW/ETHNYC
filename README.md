@@ -41,7 +41,7 @@ Technologies Used: The Graph, Worldcoin, Airstack, WalletConnect, UMA, 1inch Net
    
 4. Universal token and chain support by leveraging **[Axlear]([link here](https://github.com/WilliamUW/ETHNYC/blob/main/sponsors/Axlear.md))**'s cross-chain communication 
 
-5. will add more details afterwards
+5. 
 
 Check out our [ETHGlobal page](link here)! Reputable.ai is an **([ETHGlobal Waterloo](https://ethglobal.com/events/waterloo2023](https://ethglobal.com/events/newyork2023))** project.
 

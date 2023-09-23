@@ -58,6 +58,13 @@ function App() {
     setSelectedFund(null);
   };
 
+  const handleDisputeButtonClick = (transaction) => {
+    // Display an alert with transaction details
+    alert(
+      `Transaction Details:\nDate: ${transaction.date}\nLabel: ${transaction.label}\nChange in Balance: ${transaction.change_in_balance}`
+    );
+  };
+
   return (
     <div className="App">
       <h1>Fund List</h1>
@@ -99,7 +106,9 @@ function App() {
                     <p>Label: {transaction.label}</p>
                     <p>Change in Balance: {transaction.change_in_balance}</p>
                   </div>
-                  <button className="dispute-button">Dispute</button>
+                  <button className="dispute-button"
+                    onClick={() => handleDisputeButtonClick(transaction)}
+                  >Dispute</button>
                 </li>
               ))}
             </ul>

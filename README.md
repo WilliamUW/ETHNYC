@@ -48,7 +48,7 @@ Technologies Used: The Graph, Worldcoin, Airstack, WalletConnect, UMA, 1inch Net
    
 7. We track transaction data on a variety of wallets using  **([AirStack](https://github.com/WilliamUW/ETHNYC/blob/main/sponsors/Airstack.md))**
   
-8.   We leveraged **([1inch Network](https://github.com/WilliamUW/ETHNYC/blob/main/sponsors/Airstack.md(https://github.com/WilliamUW/ETHNYC/blob/main/sponsors/1inchNetwork.md))** so that users could easily swap tokens to invest in a fund of their chooisng
+8.   We leveraged **([1inch Network](https://github.com/WilliamUW/ETHNYC/blob/main/sponsors/1inchNetwork.md))** so that users could easily swap tokens to invest in a fund of their chooisng
 
 9. Deployed and fully functional on **([Arbitrum](https://github.com/WilliamUW/ETHNYC/blob/main/sponsors/Arbitrum.md))**, **([Base](https://github.com/WilliamUW/ETHNYC/blob/main/sponsors/Base.md))**, **([Mantle](https://github.com/WilliamUW/ETHNYC/blob/main/sponsors/Mantle.md))**, and **([Neon EVM](https://github.com/WilliamUW/ETHNYC/blob/main/sponsors/NeonEVM.md))**
 

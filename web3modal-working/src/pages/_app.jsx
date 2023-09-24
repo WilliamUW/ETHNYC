@@ -58,8 +58,22 @@ export default function App({ Component, pageProps }) {
   const [value, setValue] = useState('10');
   const [currency, setCurrency] = useState('USDC');
 
-
   const { Option } = Select;
+
+  const unlimitWidget = async () => {
+    const response = await fetch("https://api-sandbox.gatefi.com/onramp/v1/buy?amount=" + value + "&crypto=" + currency + "&fiat=USD&partnerAccountId=40ccf701-af56-4662-8681-5b9a9ca3fb22&payment=debit-credit-card&redirectUrl=google.com&region=US&walletAddress=mjEcj2LA3vj1nDi8ZD3QMCs9kNqVk7Dpee", {
+      method: "GET",
+      redirect: 'follow',
+      headers: {
+        
+        "access-control-allow-headers": "Accept",
+        "api-key": "eOLFHIEVQmwqJOAwWBOiFsfnNhncHigb", 
+        
+      }
+    });
+    const data = await response;
+    return(data.url);
+  }
 
   const selectAfter = (
     <Select defaultValue="USDC" style={{ width: 100 }} onChange={setCurrency}>
@@ -110,6 +124,9 @@ export default function App({ Component, pageProps }) {
             <Component {...pageProps} />
           </PrivyProvider>
         </List.Item> */}
+        <List.Item>
+          <Button href="https://onramp.gatefi.com/?merchantId=76555590-c3c7-4608-8f25-37165c3f5fee" target="_blank">Buy via Unlimit Crypto</Button>
+        </List.Item>
         <List.Item>
           <p>How much would you like to fund?</p>
         </List.Item>

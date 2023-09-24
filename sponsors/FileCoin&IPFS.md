@@ -21,7 +21,10 @@ https://github.com/WilliamUW/ETHNYC/assets/25058545/ddbff244-7809-4840-8524-5d2f
 
 https://github.com/WilliamUW/ETHNYC/blob/e33250796638162e6143d1841cae0511d293185d/react_frontend/ipfs.js#L1-L60
 
-### How easy is it to use the API / Protocol? (1 - ve
-ry difficult, 10 - very easy)
+### How easy is it to use the API / Protocol? (1 - very difficult, 10 - very easy)
+
+10!
 
 ### Additional Feedback
+
+Using Web3.Storage was very intuitive and straight with the user friendly web UI as well as clear and interactive documentation

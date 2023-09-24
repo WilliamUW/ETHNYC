@@ -88,33 +88,34 @@ elif st.session_state.page == 'uma':
 
         if st.button("Back to Main"):
             st.session_state.page = 'main'
-    
-# Main page
-st.image("reputable_logo.png", width=200)
-# Welcome Message
-st.title("Welcome to Reputable's Data Dashboard")
 
-# Mission Statement
-st.header("Our Mission")
-st.write("""
-Reputable's mission is to provide investors and donors with a one-stop shop to:
-- Conduct market research
-- Deploy capital
-- Audit fund management
-""")
+elif st.session_state.page =='main':    
+    # Main page
+    st.image("reputable_logo.png", width=200)
+    # Welcome Message
+    st.title("Welcome to Reputable's Data Dashboard")
 
- # Optional Introduction or further details
-st.header("About Reputable")
-st.write("""
-Trustworthy and reliable data is crucial, especially in Web3.
-Reputable is dedicated to offering The Graph and Airstack integrations to query data.
-Dive deep into our dashboard to access the comprehensive insightrs you need.
-""")
+    # Mission Statement
+    st.header("Our Mission")
+    st.write("""
+    Reputable's mission is to provide investors and donors with a one-stop shop to:
+    - Conduct market research
+    - Deploy capital
+    - Audit fund management
+    """)
 
-# Call to Action (if any specific user actions are desired from the landing page)
-st.header("Get Started")
-st.write("""
-Navigate through the sidebar to explore different sections of our dashboard.
-Whether you're an investor looking for the next big opportunity or a donor aiming to make 
-a difference, Reputable is here to help.
-""")
+    # Optional Introduction or further details
+    st.header("About Reputable")
+    st.write("""
+    Trustworthy and reliable data is crucial, especially in Web3.
+    Reputable is dedicated to offering The Graph and Airstack integrations to query data.
+    Dive deep into our dashboard to access the comprehensive insightrs you need.
+    """)
+
+    # Call to Action (if any specific user actions are desired from the landing page)
+    st.header("Get Started")
+    st.write("""
+    Navigate through the sidebar to explore different sections of our dashboard.
+    Whether you're an investor looking for the next big opportunity or a donor aiming to make 
+    a difference, Reputable is here to help.
+    """)

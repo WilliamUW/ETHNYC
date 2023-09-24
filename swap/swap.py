@@ -41,4 +41,29 @@ class Swap:
 
         result = self._get(url)
         return result
-    
+    def get_swap(self, from_token_symbol: str, to_token_symbol: str,
+                    amount: float, slippage: float, decimal=None, send_address=None):
+            if send_address is None:
+                send_address = self.address
+            else:
+                pass
+            from_address = self._token_to_address(from_token_symbol)
+            to_address = self._token_to_address(to_token_symbol)
+            if decimal is None:
+                try:
+                    self.tokens[from_token_symbol]['decimals']
+                except KeyError:
+                    decimal = 18
+                else:
+                    decimal = self.tokens[from_token_symbol]['decimals']
+            else:
+                pass
+            if decimal == 0:
+                amount_in_wei = int(amount)
+            else:
+                amount_in_wei = int(amount * 10 ** decimal)
+            url = f'{self.base_url}/{self.version}/{self.chain_id}/swap'
+            url = url + f'?src={from_address}&dst={to_address}&amount={amount_in_wei}'
+            url = url + f'&from={send_address}&slippage={slippage}'
+            result = self._get(url)
+            return result

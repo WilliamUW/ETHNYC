@@ -15,6 +15,10 @@ Unlimit Crypto ensures that we are able to accept both fiat and crypto to maximi
 
 ### Link to the code where the tech is used.
 
+https://github.com/WilliamUW/ETHNYC/blob/3688f364e660c5dead24980a8e16835350d6667f/web3modal-working/src/pages/_app.jsx#L58-L76
+
+https://github.com/WilliamUW/ETHNYC/blob/3688f364e660c5dead24980a8e16835350d6667f/web3modal-working/src/pages/_app.jsx#L127-L129
+
 ### How easy is it to use the API / Protocol? (1 - very difficult, 10 - very easy)
 
 10 🌟

@@ -29,6 +29,8 @@ const AssistantModal = () => {
   return (
     <>
       <Text>If you have any questions, ask our ReputAI Assistant for help!</Text>
+      <br />
+      <br />
       <Button type="primary" onClick={showModal}>
         ReputAI Assistant
       </Button>

@@ -7,6 +7,8 @@
 🏆 Best Public Goods
 
 5 teams x $500 USDC each
+
+
 🎨 Best use of Nouns Artwork
 
 5 teams x $500 USDC each

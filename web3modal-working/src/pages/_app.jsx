@@ -6,7 +6,7 @@ import {
 import { Web3Modal } from "@web3modal/react";
 import { useEffect, useState } from "react";
 import { configureChains, createConfig, WagmiConfig } from "wagmi";
-import { mainnet, optimism, polygon } from "wagmi/chains";
+import { arbitrum, avalanche, base, fantom, goerli, lineaTestnet, mainnet, mantle, optimism, polygon } from "wagmi/chains";
 import "../styles.css";
 
 import { List, InputNumber, Select, Button } from 'antd'
@@ -35,7 +35,7 @@ if (!process.env.NEXT_PUBLIC_PROJECT_ID) {
 const projectId = process.env.NEXT_PUBLIC_PROJECT_ID;
 
 // 2. Configure wagmi client
-const chains = [mainnet, polygon, optimism];
+const chains = [mainnet, polygon, optimism, arbitrum, avalanche, lineaTestnet, base, fantom, goerli, mantle];
 
 const { publicClient } = configureChains(chains, [w3mProvider({ projectId })]);
 const wagmiConfig = createConfig({

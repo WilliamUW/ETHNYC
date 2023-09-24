@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Unlock Sample</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<script>
+  (function(d, s) {
+    var js = d.createElement(s),
+      sc = d.getElementsByTagName(s)[0];
+    js.src = "https://paywall.unlock-protocol.com/static/unlock.latest.min.js";
+    sc.parentNode.insertBefore(js, sc);
+  }(document, "script"));
+</script>
+
+<script>
+  var unlockProtocolConfig = {
+    "network": 100, // Network ID (1 is for mainnet, 4 for rinkeby, 100 for xDai, etc)  
+    "locks": {
+      "0xac1fceC2e4064CCd83ac8C9B0c9B8d944AB0D246": {
+        "name": "Unlock Members"
+      }
+    },
+    "icon": "https://unlock-protocol.com/static/images/svg/unlock-word-mark.svg",
+    "callToAction": {
+      "default": "Please unlock this demo!"
+    }
+  }
+</script>
+
+<h1>Unlock Demo</h1>
+<p class="unlock-content locked">Unlock Demo is currently locked 🔒 </p>
+<p class="unlock-content unlocked">Unlock Demo is currently unlocked 🎉</p>
+<p class="unlock-content locked" onclick="window.unlockProtocol && window.unlockProtocol.loadCheckoutModal()"><button class="button">
+    Unlock!
+  </button></p>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

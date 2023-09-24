@@ -1,6 +1,6 @@
 # 🛡 Reputable 
 
-#### Mission: Provide investors and donors with a one-stop shop for 
+#### Mission: Provide investors and donors with a one-stop shop to conduct market research, deploy capital, and audit fund management.
 
 ## 💡 Inspiration 
 

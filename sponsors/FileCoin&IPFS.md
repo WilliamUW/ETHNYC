@@ -12,6 +12,10 @@ We leveraged IPFS, specifically Web3.Storage API to save NFT metadata so that th
 
 Arbiscan Link: https://testnets.opensea.io/assets/arbitrum-goerli/0xc338b5b660e8a656fa92e362acac49f785cf39f5/11003
 
+https://bafybeicsdwbjzz6myn5d2tdcvczqbsmh36obqrwijfkhevlbgl3zdrwvue.ipfs.nftstorage.link/
+https://bafkreifveanvswfsuyn3n3sy33msyzat4ycw74guexkgnrprg3iu47jlli.ipfs.nftstorage.link/
+https://bafybeihqau7rfsd2in5j74tff4sxlxeelpkl2jzvkb2jji6lqkqim3xh6y.ipfs.nftstorage.link/
+
 https://github.com/WilliamUW/ETHNYC/assets/25058545/2afd0b79-41e9-41d7-b403-73eadcd3addf
 
 <img width="1101" alt="Screen Shot 2023-09-23 at 8 47 00 PM" src="https://github.com/WilliamUW/ETHNYC/assets/25058545/b9edb2ab-3bdb-4e8c-9284-436926bb8a82">

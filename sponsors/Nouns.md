@@ -23,7 +23,7 @@ https://github.com/WilliamUW/ETHNYC/assets/25058545/e7497d94-6e8e-4258-85f9-6fbe
 
 ### Link to the code where the tech is used.
 
-https://github.com/WilliamUW/ETHNYC/blob/847878844a82be1f643f9696499d102170a4161d/react_frontend/app/home.js#L29
+https://github.com/WilliamUW/ETHNYC/blob/847878844a82be1f643f9696499d102170a4161d/react_frontend/app/home.js#L27
 
 https://github.com/WilliamUW/ETHNYC/blob/0f09d5dd611521047636c2a4326509ab469c2862/react_frontend/components/jobdetails/specifics/Specifics.jsx#L96
 

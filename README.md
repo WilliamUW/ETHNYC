@@ -1,24 +1,30 @@
 # 🛡 Reputable 
 
-#### Mission: Provide investors with an effective, yet simple interface to dispute publicy visible transactions
+#### Mission: Provide investors and donors with a one-stop shop for 
 
 ## 💡 Inspiration 
 
-**There are no good ways to determine whether a fund is trustworthy or to dispute management of a fund.** Just recently, in 2021, former Make-A-Wish Iowa CEO plead guilty to embezzling nearly *$41,000*. This is not an isolated case- other headlines suggest that this is a widespread issue:
+**There are no easy ways to determine whether a fund is trustworthy or to dispute mismanagement of a fund.** Just recently, in 2021, former Make-A-Wish Iowa CEO plead guilty to embezzling nearly $41,000 USD. This is not an isolated case- other headlines suggest that this is a widespread issue:
 
-* "FTC wants AmeriDebt founder to refund $172 million" (Ambrose 2005)
-* "fAs charitable cheating rises, so does cost to taxpayers" (USA Today 2005) 
-* "Tax Abuse Rampant in Nonprofits, IRS Says" (Crenshaw 2005) 
+- Associated Community Services made 1.3 billion robocalls, soliciting money for moral causes (helping homeless veterans, breast cancer, children with autism) and not following through. $110,000,000 USD was fraudulently claimed. https://www.ftc.gov/legal-library/browse/cases-proceedings/162-3208-associated-community-services-inc
+- National Children's Leukemia Foundation took in around $9.7 million in charitable contributions, but according to CNN spent only $57,000 on assistance for leukemia patients. $1.3 million plus went directly to NCLF's founder. https://www.cnn.com/2015/07/21/us/new-york-charity-fraud/index.html
+- The United States Navy Veterans Association collected around $100 million in donations. Its founder claimed to have the support of multiple large foundations that didn't actually exist, but was able to fraudulently obtain $100 million from donors. https://www.theguardian.com/world/2013/dec/16/scammer-28-year-sentence-navy-veterans-charity-fraud
 
-Although fund management can be especially helpful when it comes to tracking charities and non-profits, investors should also have the ability to audit fund management with any type of organization. So how do we ensure capital is confidently deployed? With **Reputable**! 🤖
+And more...
+- "FTC wants AmeriDebt founder to refund $172 million" (Ambrose 2005)
+- "fAs charitable cheating rises, so does cost to taxpayers" (USA Today 2005)
+- "Tax Abuse Rampant in Nonprofits, IRS Says" (Crenshaw 2005) 
+
+Investors and donors would be much more confident depositing money in funds that have a demonstrably clean track record. Users should have the ability to easily conduct market research and audit fund management. How do we ensure capital is confidently and securely deployed? With **Reputable**! 
+
+![reputable (1)](https://github.com/WilliamUW/ETHNYC/assets/22282583/11e49b88-0a9f-462e-af69-c3c9572f374b)
 
 ## ❓ What it does
 
-**Reputable** is a multipurpose, platform-agnostic tool that uses a quadratic voting and dispute/ranking based algorithm to determine the reputation of investors and investees. View ratings, submit disputes, and deploy capital from any chain.
-
-**Login** with WalletConnect or MetaMask to access our platform [here](link here).
-
-**Access** our Dashboard via the Web or our app [directly](link here).
+**Reputable** is a platform that allows users to:
+1. Easily onboard with WalletConnect for universal token and wallet acceptance and a discovery queue to find reputable funds.
+3. Quickly determine the trustworthiness a fund with our reputation system (which considers transaction records, user reviews, and dispute resolution) and dashboard that shows fund activities. Soulbound NFT badges are granted to funds based on their reputation and activity.
+4. Audit a fund by submitting a dispute on a transaction using UMA protocol. 
 
 ## 🚧 How we built it 
 

@@ -19,7 +19,7 @@ def load_json(file_path):
 
 # Check if 'page' is already in the session state
 if 'page' not in st.session_state:
-    st.session_state.page = 'main'
+    st.session_state.page = 'uma'
 
 # Page Navigation
 st.sidebar.title('Navigation')

@@ -75,15 +75,6 @@ const exampleDisputes = [
   },
 ];
 
-function App() {
-  return (
-    <div>
-      <h1>Dispute List</h1>
-      <DisputeList disputes={exampleDisputes} />
-    </div>
-  );
-}
-
 
 
 
@@ -110,7 +101,12 @@ function DisputeList({ disputes }) {
           <div className="dispute-result">
             <p><strong>Change in Reputation:</strong> {dispute.changeInReputation}</p>
           </div>
-          <Button type="primary" onClick={() => alert("https://etherscan.io/tx/" + dispute.transactionHash)}>View Dispute Details</Button>
+          <Button type="primary" onClick={() => {
+            setTimeout(function(){
+              // Code to run after the pause
+              alert("https://etherscan.io/tx/" + dispute.transactionHash);
+          }, 3000);      
+            }}>View Dispute Details</Button>
         </List.Item>
       ))}
     </List>

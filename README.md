@@ -23,7 +23,7 @@ Investors and donors would be much more confident depositing money in funds that
 
 ## 🚧 How we built it 
 
-Technologies Used: The Graph, Worldcoin, Airstack, WalletConnect, UMA, 1inch Network, Uniswap Foundation, Gnosis Chain, Safe, Aave, Polygon, Arbitrum, Base, Axiom, Apecoin, Biconomy, QuickNode, Filecoin, Axlear
+Technologies Used: The Graph, Worldcoin, Airstack, WalletConnect, UMA, 1inch Network, Uniswap Foundation, Gnosis Chain, Safe, Aave, Polygon, Arbitrum, Base, Axiom, Apecoin, Biconomy, QuickNode, Filecoin, Axelar
 
 1. We are leveraging **([WorldCoin](https://github.com/WilliamUW/ETHNYC/blob/main/sponsors/WorldCoin.md))** to provide secure authentication login! (We want to make sure real people are filing disputes!)
    - User privacy is preserved using **([Polygon](https://github.com/WilliamUW/ETHNYC/blob/main/sponsors/Polygon.md))**  ID's Verifiable Credentials  

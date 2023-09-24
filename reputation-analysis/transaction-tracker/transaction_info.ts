@@ -20,18 +20,25 @@ const safeService = new SafeApiKit({
     readOnlyEthAdapter
   })
 
-// get transaction
-const tx: SafeMultisigTransactionResponse = 
-  await safeService.getTransaction(safeTxHash)
 
-  // estimate gas
-const estimateTx: SafeMultisigTransactionEstimateResponse =
-  await safeService.estimateSafeTransaction(safeOwner, safeTransaction)
+function getTx(): SafeMultisigTransactionResponse {
+  const tx: SafeMultisigTransactionResponse = 
+  await safeService.getTransaction(safeTxHash)
+  return tx
+}
+
+function getGas(): SafeMultisigTransactionEstimateResponse {
+  const estimateTx: SafeMultisigTransactionEstimateResponse =
+    await safeService.estimateSafeTransaction(safeOwner, safeTransaction)
+  return estimateTx
+}
 
 // confirm transactions
-const confirmations: SafeMultisigConfirmationListResponse =
+function getConfirmations(): SafeMultisigConfirmationListResponse {
+  const confirmations: SafeMultisigConfirmationListResponse =
   await safeService.getTransactionConfirmations(safeTxHash)
-
+  return confirmations
+}
 async function main() {
   // get incoming transactions
   const incomingTxs = await safeService.getIncomingTransactions(safeOwner);

@@ -21,18 +21,16 @@ const safeService = new SafeApiKit({
   })
 
 // get transaction
-// const tx: SafeMultisigTransactionResponse = 
-//   await safeService.getTransaction(safeTxHash)
+const tx: SafeMultisigTransactionResponse = 
+  await safeService.getTransaction(safeTxHash)
 
   // estimate gas
-// const estimateTx: SafeMultisigTransactionEstimateResponse =
-//   await safeService.estimateSafeTransaction(safeOwner, safeTransaction)
+const estimateTx: SafeMultisigTransactionEstimateResponse =
+  await safeService.estimateSafeTransaction(safeOwner, safeTransaction)
 
 // confirm transactions
-// const confirmations: SafeMultisigConfirmationListResponse =
-//   await safeService.getTransactionConfirmations(safeTxHash)
-
-// get incoming transactions
+const confirmations: SafeMultisigConfirmationListResponse =
+  await safeService.getTransactionConfirmations(safeTxHash)
 
 async function main() {
   // get incoming transactions
@@ -45,17 +43,3 @@ async function main() {
   const pendingTxs = await safeService.getPendingTransactions(safeOwner);
 
 }
-// const incomingTxs: TransferListResponse = 
-//  await safeService.getIncomingTransactions(safeOwner)
-
-// // get multisig transactions
-// const multisigTxs: SafeMultisigTransactionListResponse = 
-//  await safeService.getMultisigTransactions(
-//   safeOwner
-//   )
-
-// // get pending transaction
-// const pendingTxs: SafeMultisigTransactionListResponse = 
-//  await safeService.getPendingTransactions(
-//   safeOwner
-//   )

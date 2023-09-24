@@ -1,8 +1,0 @@
-[{'amount': '1', 'blockNumber': 14498658, 'blockTimestamp': '2022-04-01T06:10:08Z', 'from': {'addresses': ['0x000000000000000
-0000000000000000000000000']}, 'to': {'addresses': ['0xab5801a7d398351b8be11c439e05c5b3259aec9b']}, 'tokenAddress': '0xfc5d925
-8cc6d21d21c16aaec1daa52759c92ce30', 'transactionHash': '0x9b83386f626320e73a7370fac9fe99cef894b5aec9c9471daea382c6255d973e', 
-'tokenId': '103', 'tokenType': 'ERC721', 'blockchain': 'ethereum'}, {'amount': '7', 'blockNumber': 15638663, 'blockTimestamp'
-: '2022-09-29T11:19:59Z', 'from': {'addresses': ['0xab5801a7d398351b8be11c439e05c5b3259aec9b']}, 'to': {'addresses': ['0x6fbf
-b348597f9f88cd3a2d99714687268769441c']}, 'tokenAddress': '0x54fd62228c6e1234fd5fded28555ca963dcf6d26', 'transactionHash': '0x
-644bbf49202270625b5233aa7e091c54c71fe1e41137f9a8460ce68215f3e7d8', 'tokenId': '', 'tokenType': 'ERC20', 'blockchain': 'ethere
-um'}]

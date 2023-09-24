@@ -10,11 +10,6 @@
 - National Children's Leukemia Foundation took in around $9.7 million in charitable contributions, but according to CNN spent only $57,000 USD on assistance for leukemia patients. $1.3 million USD went directly to NCLF's founder. https://www.cnn.com/2015/07/21/us/new-york-charity-fraud/index.html
 - The United States Navy Veterans Association fraudulently collected around $100 million USD in donations. Its founder claimed to have the support of multiple large foundations that didn't actually exist. https://www.theguardian.com/world/2013/dec/16/scammer-28-year-sentence-navy-veterans-charity-fraud
 
-And more...
-- "FTC wants AmeriDebt founder to refund $172 million" (Ambrose 2005)
-- "fAs charitable cheating rises, so does cost to taxpayers" (USA Today 2005)
-- "Tax Abuse Rampant in Nonprofits, IRS Says" (Crenshaw 2005) 
-
 Investors and donors would be much more confident depositing money in funds that have a demonstrably clean track record. Users should have the ability to easily conduct market research and audit fund management. How do we ensure capital is confidently and securely deployed? With **Reputable**! 
 
 ![reputable (1)](https://github.com/WilliamUW/ETHNYC/assets/22282583/11e49b88-0a9f-462e-af69-c3c9572f374b)

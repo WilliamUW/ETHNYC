@@ -129,7 +129,6 @@ const Specifics = ({ title, points }) => {
 
       {title == "Reputation" && 
       <View style={styles.pointsContainer}>
-        <Text style={styles.title}>{title}: 98</Text>
         <p></p>
         <Button type="primary">Import Reputation with UMA x The Graph</Button>
 

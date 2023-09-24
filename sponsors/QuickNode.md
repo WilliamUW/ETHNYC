@@ -12,7 +12,7 @@ https://github.com/WilliamUW/ETHNYC/assets/25058545/919ef1eb-8e5e-456b-a169-b27c
 
 ### Link to the code where the tech is used.
 
-https://github.com/WilliamUW/ETHNYC/blob/f9c43035d2849b63e999115cd82be594f95dfa89/react_frontend/quicknode_nft_api.py#L1-L23
+https://github.com/WilliamUW/ETHNYC/blob/fc85a44d923aaa529c9fa9745ce4347c9bdfeb9c/react_frontend/quicknode_nft_api.py#L1-L40
 
 ### How easy is it to use the API / Protocol? (1 - very difficult, 10 - very easy)
 

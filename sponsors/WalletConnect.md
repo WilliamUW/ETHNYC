@@ -10,7 +10,9 @@ Universal wallet acceptance made possible with WalletConnect SDK!
 
 We are using WalletConnect SDK so that we can allow users to connect any wallet they want so we can reduce as much as friction as possible to funding organizations and funds.
 
+<img width="1280" alt="Screen Shot 2023-09-23 at 11 14 49 PM" src="https://github.com/WilliamUW/ETHNYC/assets/25058545/a70f83c1-0e2a-4001-8959-9cb41c5688a2">
 
+<img width="1280" alt="Screen Shot 2023-09-23 at 11 14 57 PM" src="https://github.com/WilliamUW/ETHNYC/assets/25058545/c3be7e68-4e7a-41fd-94d6-2c762a8d925f">
 
 https://github.com/WilliamUW/ETHNYC/assets/25058545/a6d7872c-0ea9-43b3-8372-8f11cdd49a55
 

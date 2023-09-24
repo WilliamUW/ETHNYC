@@ -14,40 +14,8 @@ def get_data_for_wallet(wallet_address):
 if 'page' not in st.session_state:
     st.session_state.page = 'main'
 
-# Main page
-if st.session_state.page == 'main':
-    if st.button("Open Glossary"):
-        st.session_state.page = 'glossary'
-    else:
-        st.title("UMA Disputes Analysis")
-        # Input for the blockchain wallet address
-        wallet_address = st.text_input("UMA Wallet Address:", "0x000000aaee6a496aaf7b7452518781786313400f")
 
-        if wallet_address:
-            # Fetching the data for the entered wallet address
-            df = get_data_for_wallet(wallet_address)
-            st.write(df.columns)
-            # Displaying the data in a table
-            st.dataframe(df)
-
-            # Plotting the data
-            fig, ax = plt.subplots()
-            
-            #df.set_index('Wallet Address')[['count_reveals', 'countRetrievals', 'votesCommited']].plot(kind='bar', ax=ax, figsize=(10, 5))
-            df.set_index('address')[['countReveals', 'countRetrievals', 'votesCommited']].plot(kind='bar', ax=ax, figsize=(10, 5))
-            ax.set_title("Activity Overview for Wallet Address")
-            ax.set_ylabel("Counts")
-            ax.set_xlabel("Wallet Address")
-            
-            st.pyplot(fig)
-
-st.write("""
-Note: Make sure to replace the `get_data_for_wallet` function with the actual method 
-      to retrieve data from your blockchain. This is just a template with sample data.
-""")
-
-elif st.session_state.page == 'glossary':
-    st.write("Glossary")
+if st.session_state.page == 'glossary':
     glossary = { 
         "address": "The unique wallet address.",
         "countRetrievals": "Provides a lower bound on the number of votes a user has correctly voted for. Users may not have retrieved rewards for all of their correct votes.",
@@ -65,5 +33,31 @@ elif st.session_state.page == 'glossary':
     if st.button("Back to Main"):
         st.session_state.page = 'main'
 
-if __name__ == "__main__":
-    st.run()
+# Main page
+elif st.session_state.page == 'main':
+    if st.button("Open Glossary"):
+        st.session_state.page = 'glossary'
+    else:
+        st.title("UMA Disputes Analysis")
+        # Input for the blockchain wallet address
+        wallet_address = st.text_input("UMA Wallet Address:", "0x000000aaee6a496aaf7b7452518781786313400f")
+
+        if wallet_address:
+            # Fetching the data for the entered wallet address
+            df = get_data_for_wallet(wallet_address)
+            # Displaying the data in a table
+            st.dataframe(df)
+
+            # Plotting the data
+            fig, ax = plt.subplots()
+            
+            # Print desired values
+            for index, row in df.iterrows():
+                print(f"Address: {row['address']}")
+                print(f"countReveals: {row['countReveals']}")
+                print(f"countRetrievals: {row['countRetrievals']}")
+                print(f"votesCommited: {row['votesCommited']}")
+                print(f"votesRevealed: {row['votesRevealed']}")
+                print("------------------")
+            
+            print(f"")

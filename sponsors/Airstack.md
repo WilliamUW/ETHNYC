@@ -11,7 +11,7 @@
 
 ### Please add a sentence or two on why you're applicable for this prize.
 
-We leveraged Airstack to implement our reputation system and to generate custom prompts for transaction history. Airstack's customizable querying interface allowed us to filter transacions from particular wallets across token types. To analyze a fund's reputation we used queried responses from Airstack Explorer.
+We leveraged Airstack to implement our reputation system and to generate custom prompts for transaction history. Airstack's customizable querying interface allowed us to filter transactions from particular wallets across token types. To analyze a fund's reputation we used queried responses from Airstack Explorer.
 
 ### Link to the code where the tech is used.
 

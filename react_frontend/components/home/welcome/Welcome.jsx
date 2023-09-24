@@ -28,8 +28,9 @@ const AssistantModal = () => {
   };
   return (
     <>
+      <Text>If you have any questions, ask our ReputAI Assistant for help!</Text>
       <Button type="primary" onClick={showModal}>
-        AI Assistant
+        ReputAI Assistant
       </Button>
       <Modal title="AI Assistant" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
         <iframe

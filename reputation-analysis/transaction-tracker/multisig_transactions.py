@@ -22,18 +22,16 @@ balances_output = subprocess.check_output(["balances"])
 balances_output = balances_output.decode("utf-8")
 
 # Run history and store the output as a dictionary
-history_output = subprocess.check_output(["history"])
-history_output = history_output.decode("utf-8")
+txHash = subprocess.check_output(["history"])
+txHash = history_output.decode("utf-8")
 
-# Create a dictionary to store the output
+ 
 output_data = {
     "eth_address": eth_address,
-    "balances_output": balances_output,
-    "history_output": history_output
+    "balance": balances_output,
+    "safeTxHash": txHash
 }
 
 # Save the output as JSON
 with open("output.json", "w") as json_file:
     json.dump(output_data, json_file, indent=4)
-
-print("Script completed successfully.")

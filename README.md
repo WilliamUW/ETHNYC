@@ -42,7 +42,7 @@ Technologies Used: The Graph, Worldcoin, Airstack, WalletConnect, UMA, 1inch Net
           
 4. NFT metadata is stored with **([IPFS](https://github.com/WilliamUW/ETHNYC/blob/main/sponsors/IPFS.md))**, so it never goes away 
    
-5. Maintaince of reputations across all deploy networks powered by **([Axlear](https://github.com/WilliamUW/ETHNYC/blob/main/sponsors/Axlear.md))**'s cross-chain communication
+5. Maintaince of reputations across all deploy networks powered by **([Axelar](https://github.com/WilliamUW/ETHNYC/blob/main/sponsors/Axlear.md))**'s cross-chain communication
 
 6. Gas fees estimated and transactions read using **([Safe](https://github.com/WilliamUW/ETHNYC/blob/main/sponsors/Safe.md))**
    

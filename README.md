@@ -12,7 +12,9 @@
 
 Investors and donors would be more confident depositing money in funds that have a demonstrably clean track record. Users should have the ability to easily conduct market research and audit fund management. How do we ensure capital is securely deployed? With **Reputable**! 
 
-![reputable (1) (1) (1)](https://github.com/WilliamUW/ETHNYC/assets/22282583/9b6d2c1f-80ea-4ab3-bb07-9a6a0516c196)
+<p align="center">
+  <img width="460" height="300" src="https://github.com/WilliamUW/ETHNYC/assets/22282583/9b6d2c1f-80ea-4ab3-bb07-9a6a0516c196">
+</p>
 
 ## ❓ What it does
 

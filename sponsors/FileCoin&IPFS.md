@@ -8,10 +8,13 @@
 
 ### Please add a sentence or two on why you're applicable for this prize.
 
-We leveraged FileCoin and IPFS to saving NFT metadata so that it never goes away. 
+We leveraged IPFS, specifically Web3.Storage API to save NFT metadata so that the reputable score is stored decentrally and never goes away. 
+
+
 
 ### Link to the code where the tech is used.
 
-### How easy is it to use the API / Protocol? (1 - very difficult, 10 - very easy)
+### How easy is it to use the API / Protocol? (1 - ve
+ry difficult, 10 - very easy)
 
 ### Additional Feedback

@@ -54,7 +54,7 @@ const sample_response = {
 const NFTList = ({ assets }) => {
   return (
     <List
-      grid={{ gutter: 16, column: 3 }} // Adjust the number of columns as needed
+      grid={{ gutter: 16, column: 5 }} // Adjust the number of columns as needed
       dataSource={assets}
       renderItem={(item) => (
         <List.Item>
@@ -86,7 +86,7 @@ const About = ({ info }) => {
 </Text>
       </View>
 
-      <Text style={styles.headText}>Fund NFT Details:</Text>
+      <Text style={styles.headText}>Fund Badge Details (Soulbound NFTs):</Text>
       <p></p>
 
       <NFTList assets={sample_response.result.assets} />

@@ -51,11 +51,15 @@ Technologies Used: The Graph, Worldcoin, Airstack, WalletConnect, UMA, 1inch Net
 
 8. Deployed and fully functional on **([Arbitrum](https://github.com/WilliamUW/ETHNYC/blob/main/sponsors/Arbitrum.md))**, **([Base](https://github.com/WilliamUW/ETHNYC/blob/main/sponsors/Base.md))**, **([Mantle](https://github.com/WilliamUW/ETHNYC/blob/main/sponsors/Mantle.md))**, and **([Neon EVM](https://github.com/WilliamUW/ETHNYC/blob/main/sponsors/NeonEVM.md))**
 
+<img width="1279" alt="Screenshot 2023-09-24 082422" src="https://github.com/WilliamUW/ETHNYC/assets/22282583/72708b72-75a0-41f9-8b85-9ae6895006fb">
+<img width="1273" alt="Screenshot 2023-09-24 082412" src="https://github.com/WilliamUW/ETHNYC/assets/22282583/4a5f34b5-3da5-4546-8114-3ce31dabd7ef">
+<img width="1272" alt="Screenshot 2023-09-24 082348" src="https://github.com/WilliamUW/ETHNYC/assets/22282583/5a5a3299-935e-48da-89f7-6b869995230c">
+
 Check out our [ETHGlobal page](link here)! Reputable.ai is an **([ETHGlobal NYC](https://ethglobal.com/events/newyork2023))** project.
 
 ## Pitch
 
-👀 [Slide Deck](link here)
+👀 [Slide Deck](https://www.canva.com/design/DAFvPd0ZWsQ/6WnkYcl2YxM5M7jFcK6UeA/edit?utm_content=DAFvPd0ZWsQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 ## Demos
 

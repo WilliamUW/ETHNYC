@@ -14,6 +14,11 @@ def get_data_for_wallet(wallet_address):
 if 'page' not in st.session_state:
     st.session_state.page = 'main'
 
+# Page Navigation
+st.sidebar.title('Navigation')
+st.sidebar.button('Main', on_click=lambda: setattr(st.session_state, 'page', 'main'))
+st.sidebar.button('UMA', on_click=lambda: setattr(st.session_state, 'page', 'uma'))
+st.sidebar.button('Glossary', on_click=lambda: setattr(st.session_state, 'page', 'glossary'))
 
 if st.session_state.page == 'glossary':
     glossary = { 
@@ -33,65 +38,83 @@ if st.session_state.page == 'glossary':
     if st.button("Back to Main"):
         st.session_state.page = 'main'
 
+# UMA Page
+elif st.session_state.page == 'uma':
+    st.title("UMA Disputes Analysis")
+    # Input for the blockchain wallet address
+    wallet_address = st.text_input("UMA Wallet Address:", "0x000000aaee6a496aaf7b7452518781786313400f")
+
+    if wallet_address:
+        # Fetching the data for the entered wallet address
+        df = get_data_for_wallet(wallet_address)
+        # Displaying the data in a table
+        st.dataframe(df)
+
+        # Display the main user details (assuming df has only one row because it's specific to an address)
+        user_info = df.iloc[0]
+
+        st.write(f"**Address**: {user_info['address']}")
+        st.write(f"**Count of Retrievals**: {user_info['countRetrievals']}")
+        st.write(f"**Count of Reveals**: {user_info['countReveals']}")
+
+        votes_committed = user_info['votesCommited']
+        if votes_committed:
+            st.write("### Votes Committed")
+            for vote in votes_committed:
+                if 'id' in vote:
+                    st.write(vote['id'])
+                else:
+                    st.write("ID not found for this vote.")
+        else:
+            st.write("No votes committed.")
+
+
+        votes_revealed = user_info['votesRevealed']
+        if votes_revealed:
+            st.write("### Votes Revealed")
+            for vote in votes_revealed:
+                if 'id' in vote:
+                    st.write(f"**ID**: {vote['id']}")
+                else:
+                    st.write("ID not found for this vote.")
+
+                # Assuming 'price' and 'numTokens' keys always exist. 
+                # If not, you'd handle them similarly as we did for 'id'
+                st.write(f"**Price**: {vote['price']}")
+                st.write(f"**Num Tokens**: {vote['numTokens']}")
+                # Similarly, you can display details about the voter within each vote, if necessary.
+        else:
+            st.write("No votes revealed.")
+
+        if st.button("Back to Main"):
+            st.session_state.page = 'main'
+    
 # Main page
-elif st.session_state.page == 'main':
-    if st.button("Open Glossary"):
-        st.session_state.page = 'glossary'
-    else:
-        st.title("UMA Disputes Analysis")
-        # Input for the blockchain wallet address
-        wallet_address = st.text_input("UMA Wallet Address:", "0x000000aaee6a496aaf7b7452518781786313400f")
+st.image("reputable_logo.png", width=200)
+# Welcome Message
+st.title("Welcome to Reputable's Data Dashboard")
 
-        if wallet_address:
-            # Fetching the data for the entered wallet address
-            df = get_data_for_wallet(wallet_address)
-            # Displaying the data in a table
-            st.dataframe(df)
+# Mission Statement
+st.header("Our Mission")
+st.write("""
+Reputable's mission is to provide investors and donors with a one-stop shop to:
+- Conduct market research
+- Deploy capital
+- Audit fund management
+""")
 
-            # Display the main user details (assuming df has only one row because it's specific to an address)
-            user_info = df.iloc[0]
+ # Optional Introduction or further details
+st.header("About Reputable")
+st.write("""
+Trustworthy and reliable data is crucial, especially in Web3.
+Reputable is dedicated to offering The Graph and Airstack integrations to query data.
+Dive deep into our dashboard to access the comprehensive insightrs you need.
+""")
 
-            st.write(f"**Address**: {user_info['address']}")
-            st.write(f"**Count of Retrievals**: {user_info['countRetrievals']}")
-            st.write(f"**Count of Reveals**: {user_info['countReveals']}")
-
-            votes_committed = user_info['votesCommited']
-            if votes_committed:
-                st.write("### Votes Committed")
-                for vote in votes_committed:
-                    if 'id' in vote:
-                        st.write(vote['id'])
-                    else:
-                        st.write("ID not found for this vote.")
-            else:
-                st.write("No votes committed.")
-
-
-            votes_revealed = user_info['votesRevealed']
-            if votes_revealed:
-                st.write("### Votes Revealed")
-                for vote in votes_revealed:
-                    if 'id' in vote:
-                        st.write(f"**ID**: {vote['id']}")
-                    else:
-                        st.write("ID not found for this vote.")
-
-                    # Assuming 'price' and 'numTokens' keys always exist. 
-                    # If not, you'd handle them similarly as we did for 'id'
-                    st.write(f"**Price**: {vote['price']}")
-                    st.write(f"**Num Tokens**: {vote['numTokens']}")
-                    # Similarly, you can display details about the voter within each vote, if necessary.
-            else:
-                st.write("No votes revealed.")
-
-            
-            # # Print desired values
-            # for index, row in df.iterrows():
-            #     print(f"Address: {row['address']}")
-            #     print(f"countReveals: {row['countReveals']}")
-            #     print(f"countRetrievals: {row['countRetrievals']}")
-            #     print(f"votesCommited: {row['votesCommited']}")
-            #     print(f"votesRevealed: {row['votesRevealed']}")
-            #     print("------------------")
-            
-            # print(f"")
+# Call to Action (if any specific user actions are desired from the landing page)
+st.header("Get Started")
+st.write("""
+Navigate through the sidebar to explore different sections of our dashboard.
+Whether you're an investor looking for the next big opportunity or a donor aiming to make 
+a difference, Reputable is here to help.
+""")

@@ -24,6 +24,10 @@ It usable throughout web, mobile, and tablet.
 
 <img width="1280" alt="Screen Shot 2023-09-23 at 11 14 57 PM" src="https://github.com/WilliamUW/ETHNYC/assets/25058545/c3be7e68-4e7a-41fd-94d6-2c762a8d925f">
 
+Mobile: 
+<img width="1280" alt="Screen Shot 2023-09-24 at 6 40 11 AM" src="https://github.com/WilliamUW/ETHNYC/assets/25058545/96da6b92-aa18-4e73-8136-62bab28d8e45">
+
+<img width="1280" alt="Screen Shot 2023-09-24 at 6 39 40 AM" src="https://github.com/WilliamUW/ETHNYC/assets/25058545/ee1929ec-1d8e-4c4d-be8e-990972fd3d8c">
 
 
 https://github.com/WilliamUW/ETHNYC/assets/25058545/56e7cd0d-5ce1-45de-adb4-03de660ef183

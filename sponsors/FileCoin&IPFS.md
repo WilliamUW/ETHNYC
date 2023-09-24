@@ -10,7 +10,9 @@
 
 We leveraged IPFS, specifically Web3.Storage API to save NFT metadata so that the reputable score is stored decentrally and never goes away. 
 
+Arbiscan Link: https://testnets.opensea.io/assets/arbitrum-goerli/0xc338b5b660e8a656fa92e362acac49f785cf39f5/11003
 
+Image Link: https://bafybeigzszd2dvjbfw2y6ofcthxqmsnz7wzq6ljowi7nd7vgmqhxx6asva.ipfs.w3s.link/fintech.png
 
 ### Link to the code where the tech is used.
 

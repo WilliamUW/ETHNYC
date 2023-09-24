@@ -6,6 +6,7 @@ import "@nomiclabs/hardhat-waffle";
 import "@typechain/hardhat";
 import "hardhat-gas-reporter";
 import "solidity-coverage";
+import "./tasks";
 
 dotenv.config();
 
@@ -32,11 +33,13 @@ const config: HardhatUserConfig = {
     },
     goerli: {
       url: process.env.GOERLI_URL || "",
+      chainId: 5,
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     "arbitrum-goerli": {
       url: process.env.ARBITRUM_GOERLI_URL || "",
+      chainId: 421613,
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
@@ -45,18 +48,15 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
-    "celo-testnet": {
-      url: process.env.CELO_TESTNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-    },
     "mantle-testnet": {
       url: process.env.MANTLE_TESTNET_URL || "",
+      chainId: 5001,
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     "base-testnet": {
       url: process.env.BASE_TESTNET_URL || "",
+      chainId: 84531,
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },

@@ -1,5 +1,5 @@
 import { task } from "hardhat/config";
-import { deployReputable, deployAllReputable } from "./tasks/ReputableSuite";
+import { deployReputable, deployAllReputable } from "./ReputableSuite";
 
 task("deployReputable", "Deploys Reputable contract").setAction(
   deployReputable

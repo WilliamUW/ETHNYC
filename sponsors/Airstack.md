@@ -4,8 +4,10 @@
 
 ### Prize Requirements
 
-1. Most Excellent use of Airstack APIs gets $3000
-2. 6 Runner up use of Airstack APIs get $500 each = $3000 total
+🥇 Most Excellent use of Airstack APIs — $3000
+🥈 Excellent use of Airstack APIs — $2000
+🥈 Excellent use of Airstack APIs — $2000
+🏃 6 Runner up use of Airstack APIs — $3000/500 each
 
 ### Please add a sentence or two on why you're applicable for this prize.
 

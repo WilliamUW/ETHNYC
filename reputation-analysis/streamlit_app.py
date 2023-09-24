@@ -48,16 +48,50 @@ elif st.session_state.page == 'main':
             # Displaying the data in a table
             st.dataframe(df)
 
-            # Plotting the data
-            fig, ax = plt.subplots()
+            # Display the main user details (assuming df has only one row because it's specific to an address)
+            user_info = df.iloc[0]
+
+            st.write(f"**Address**: {user_info['address']}")
+            st.write(f"**Count of Retrievals**: {user_info['countRetrievals']}")
+            st.write(f"**Count of Reveals**: {user_info['countReveals']}")
+
+            votes_committed = user_info['votesCommited']
+            if votes_committed:
+                st.write("### Votes Committed")
+                for vote in votes_committed:
+                    if 'id' in vote:
+                        st.write(vote['id'])
+                    else:
+                        st.write("ID not found for this vote.")
+            else:
+                st.write("No votes committed.")
+
+
+            votes_revealed = user_info['votesRevealed']
+            if votes_revealed:
+                st.write("### Votes Revealed")
+                for vote in votes_revealed:
+                    if 'id' in vote:
+                        st.write(f"**ID**: {vote['id']}")
+                    else:
+                        st.write("ID not found for this vote.")
+
+                    # Assuming 'price' and 'numTokens' keys always exist. 
+                    # If not, you'd handle them similarly as we did for 'id'
+                    st.write(f"**Price**: {vote['price']}")
+                    st.write(f"**Num Tokens**: {vote['numTokens']}")
+                    # Similarly, you can display details about the voter within each vote, if necessary.
+            else:
+                st.write("No votes revealed.")
+
             
-            # Print desired values
-            for index, row in df.iterrows():
-                print(f"Address: {row['address']}")
-                print(f"countReveals: {row['countReveals']}")
-                print(f"countRetrievals: {row['countRetrievals']}")
-                print(f"votesCommited: {row['votesCommited']}")
-                print(f"votesRevealed: {row['votesRevealed']}")
-                print("------------------")
+            # # Print desired values
+            # for index, row in df.iterrows():
+            #     print(f"Address: {row['address']}")
+            #     print(f"countReveals: {row['countReveals']}")
+            #     print(f"countRetrievals: {row['countRetrievals']}")
+            #     print(f"votesCommited: {row['votesCommited']}")
+            #     print(f"votesRevealed: {row['votesRevealed']}")
+            #     print("------------------")
             
-            print(f"")
+            # print(f"")

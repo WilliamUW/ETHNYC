@@ -28,3 +28,4 @@ https://github.com/WilliamUW/ETHNYC/blob/5e04a919874ba11c1fa3817279e63462eee657e
 
 ### Additional Feedback
 
+Love how easy it was to setup the demo! 

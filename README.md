@@ -6,9 +6,9 @@
 
 **There are no easy ways to determine whether a fund is trustworthy or to dispute mismanagement of a fund.** Just recently, in 2021, former Make-A-Wish Iowa CEO plead guilty to embezzling nearly $41,000 USD. This is not an isolated case- other headlines suggest that this is a widespread issue:
 
-- Associated Community Services made 1.3 billion robocalls, soliciting money for moral causes (helping homeless veterans, breast cancer, children with autism) and not following through. $110,000,000 USD was fraudulently claimed. https://www.ftc.gov/legal-library/browse/cases-proceedings/162-3208-associated-community-services-inc
-- National Children's Leukemia Foundation took in around $9.7 million in charitable contributions, but according to CNN spent only $57,000 on assistance for leukemia patients. $1.3 million plus went directly to NCLF's founder. https://www.cnn.com/2015/07/21/us/new-york-charity-fraud/index.html
-- The United States Navy Veterans Association fraudulently collected around $100 million in donations. Its founder claimed to have the support of multiple large foundations that didn't actually exist. https://www.theguardian.com/world/2013/dec/16/scammer-28-year-sentence-navy-veterans-charity-fraud
+- Associated Community Services made 1.3 billion robocalls, soliciting money for moral causes (helping homeless veterans, breast cancer, children with autism) and not following through. $110 million USD was fraudulently claimed. https://www.ftc.gov/legal-library/browse/cases-proceedings/162-3208-associated-community-services-inc
+- National Children's Leukemia Foundation took in around $9.7 million in charitable contributions, but according to CNN spent only $57,000 USD on assistance for leukemia patients. $1.3 million USD went directly to NCLF's founder. https://www.cnn.com/2015/07/21/us/new-york-charity-fraud/index.html
+- The United States Navy Veterans Association fraudulently collected around $100 million USD in donations. Its founder claimed to have the support of multiple large foundations that didn't actually exist. https://www.theguardian.com/world/2013/dec/16/scammer-28-year-sentence-navy-veterans-charity-fraud
 
 And more...
 - "FTC wants AmeriDebt founder to refund $172 million" (Ambrose 2005)

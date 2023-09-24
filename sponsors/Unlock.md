@@ -16,6 +16,8 @@ We are leveraging (Unlock) to provide secure authentication gating! (We want to 
 
 ### Link to the code where the tech is used.
 
+https://github.com/WilliamUW/ETHNYC/blob/88cb49e35c22b0e09c8c4f7632de7dc91be82ea6/unlock-demo/src/index.html#L1-L30
+
 ### How easy is it to use the API / Protocol? (1 - very difficult, 10 - very easy)
 
 10 🌟

@@ -1,6 +1,6 @@
 # Sponsor Prize
 
-## [Base]
+## Base
 
 ### Prize Requirements
 

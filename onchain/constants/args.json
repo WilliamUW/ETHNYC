@@ -1,0 +1,30 @@
+{
+  "goerli": {
+    "highRepURI": "https://highreputation.metadata",
+    "lowRepURI": "https://lowreputation.metadata",
+    "mediumRepURI": "https://mediumreputation.metadata",
+    "gateway": "0xe432150cce91c13a887f7D836923d5597adD8E31",
+    "gasReciever": "0xbE406F0189A0B4cf3A05C286473D23791Dd44Cc6"
+  },
+  "arbitrum-goerli": {
+       "highRepURI": "https://highreputation.metadata",
+    "lowRepURI": "https://lowreputation.metadata",
+    "mediumRepURI": "https://mediumreputation.metadata",
+    "gateway": "0xe432150cce91c13a887f7D836923d5597adD8E31",
+    "gasReciever": "0xbE406F0189A0B4cf3A05C286473D23791Dd44Cc6"
+  },
+  "mantle-testnet": {
+    "highRepURI": "https://highreputation.metadata",
+    "lowRepURI": "https://lowreputation.metadata",
+    "mediumRepURI": "https://mediumreputation.metadata",
+    "gateway": "0xe432150cce91c13a887f7D836923d5597adD8E31",
+    "gasReciever": "0xbE406F0189A0B4cf3A05C286473D23791Dd44Cc6"
+  },
+  "base-testnet": {
+    "highRepURI": "https://highreputation.metadata",
+    "lowRepURI": "https://lowreputation.metadata",
+    "mediumRepURI": "https://mediumreputation.metadata",
+    "gateway": "0xe432150cce91c13a887f7D836923d5597adD8E31",
+    "gasReciever": "0xbE406F0189A0B4cf3A05C286473D23791Dd44Cc6"
+  }
+}

@@ -35,6 +35,8 @@
   "dependencies": {
     "@axelar-network/axelar-gmp-sdk-solidity": "^5.3.3",
     "@openzeppelin/contracts": "^4.9.3",
+    "fs": "^0.0.1-security",
+    "shelljs": "^0.8.5",
     "solady": "^0.0.123"
   }
 }

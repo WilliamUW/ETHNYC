@@ -12,11 +12,20 @@ BASE_API_URL = 'https://gateway.thegraph.com/api/'
 API_URL = f"{BASE_API_URL}{API_KEY}/subgraphs/id/HB1Z2EAw4rtPRYVb2Nz8QGFLHCpym6ByBX6vbCViuE9F"
 
 def tokens():
-    
-    return
+    query = """
+    {
+        tokens(first: 5, where: {name: "Aave Ethereum GHO"}) {
+            id
+            name
+            symbol
+            decimals
+        }
+    }
+    """
+    return subgraphs.to_dataframe("AAVE", 'tokens', query)
 
 def main():
-    df = find_user_by_address("0x000000aaee6a496aaf7b7452518781786313400f")
+    df = tokens()
     print(df)
     return
 

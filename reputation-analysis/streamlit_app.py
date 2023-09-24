@@ -2,6 +2,8 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import uma_subgraph as uma
+import aave_gho_subgraph as aave
+import json
 
 # Function to retrieve data for a given wallet address from the blockchain.
 # This should be replaced with the actual method of getting the data.
@@ -9,6 +11,11 @@ def get_data_for_wallet(wallet_address):
     # For this example, I'll assume a simple dataframe. Replace with real logic.
     df = uma.find_user_by_address(wallet_address)
     return df
+
+def load_json(file_path):
+    with open(file_path, 'r') as f:
+        data = json.load(f)
+    return data
 
 # Check if 'page' is already in the session state
 if 'page' not in st.session_state:
@@ -18,6 +25,8 @@ if 'page' not in st.session_state:
 st.sidebar.title('Navigation')
 st.sidebar.button('Main', on_click=lambda: setattr(st.session_state, 'page', 'main'))
 st.sidebar.button('UMA', on_click=lambda: setattr(st.session_state, 'page', 'uma'))
+st.sidebar.button('Aave', on_click=lambda: setattr(st.session_state, 'page', 'aave'))
+st.sidebar.button('Safe', on_click=lambda: setattr(st.session_state, 'page', 'safe'))
 st.sidebar.button('Glossary', on_click=lambda: setattr(st.session_state, 'page', 'glossary'))
 
 if st.session_state.page == 'glossary':
@@ -89,6 +98,22 @@ elif st.session_state.page == 'uma':
         if st.button("Back to Main"):
             st.session_state.page = 'main'
 
+elif st.session_state.page == 'aave':
+    st.title("Aave GHO Analysis")
+    st.dataframe(aave.tokens())
+
+elif st.session_state.page == 'safe':
+    st.title("Safe")
+    # Load and display the JSON data
+    json_data = load_json('transaction-tracker/output.json')
+    st.json(json_data)
+    st.write("Upload your own CLI output")
+    uploaded_file = st.file_uploader("Choose a JSON file", type="json")
+    if uploaded_file is not None:
+        json_data = json.load(uploaded_file)
+        st.json(json_data)
+
+
 elif st.session_state.page =='main':    
     # Main page
     st.image("reputable_logo.png", width=200)
@@ -119,3 +144,4 @@ elif st.session_state.page =='main':
     Whether you're an investor looking for the next big opportunity or a donor aiming to make 
     a difference, Reputable is here to help.
     """)
+

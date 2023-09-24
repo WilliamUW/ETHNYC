@@ -20,7 +20,12 @@ https://github.com/WilliamUW/ETHNYC/blob/123bee318cae0e96bc6573a00dc8962e4315d6e
 
 10 🌟
 
-### Additional Feedback
+### Additional
+Here is a completed axelar transaction done with Rputable's smart contract from goerli to mantle testnet:
+https://testnet.axelarscan.io/gmp/0x6423c5ea739512a2c595aa80126d530b47fb6ff0be96bcd2ac4ce984f4101b7a
+
+Working with axelar showed me how easy it was to send arbitrary data from one chain to another. This made me realize the huge unlock in users and liquidity such protocol can provide. In addition, deploying with axelar introduced me to create2 and deterministic deployments.
+
 
 
 

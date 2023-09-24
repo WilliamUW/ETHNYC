@@ -8,9 +8,7 @@
 
 Since we are giving investors the ability to dispute publicly visible transactions, we leverage QuickNode API to see wallet transactions and fetch owned soulbound NFTs that denote the fund's reputation.
 
-
-Uploading QuickNodeAPI-Transaction+NFT_Fetch.mov…
-
+https://github.com/WilliamUW/ETHNYC/assets/25058545/919ef1eb-8e5e-456b-a169-b27c3ec6dfb3
 
 ### Link to the code where the tech is used.
 

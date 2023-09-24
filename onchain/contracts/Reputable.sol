@@ -199,6 +199,21 @@ contract Reputable is ERC721, Ownable, AxelarExecutable {
         funds[id].assertionId = bytes32(0);
     }
 
+    function assertionDisputedCallback(bytes32 assertionId) external {
+        require(msg.sender == address(_disputeOracle));
+        uint16 id;
+        for (uint16 i = 0; i < fundCount; ) {
+            if (funds[i].assertionId == assertionId) {
+                id = i;
+            }
+            unchecked {
+                i++;
+            }
+        }
+
+        funds[id].assertionId = bytes32(0);
+    }
+
     // should be called on all chains
     function addFund(address _eoa, uint256 _repuation) public onlyOwner {
         Fund memory newFund = Fund(
@@ -233,21 +248,6 @@ contract Reputable is ERC721, Ownable, AxelarExecutable {
             }
         }
         fund.isOpen = false;
-    }
-
-    function assertionDisputedCallback(bytes32 assertionId) external {
-        require(msg.sender == address(_disputeOracle));
-        uint16 id;
-        for (uint16 i = 0; i < fundCount; ) {
-            if (funds[i].assertionId == assertionId) {
-                id = i;
-            }
-            unchecked {
-                i++;
-            }
-        }
-
-        funds[id].assertionId = bytes32(0);
     }
 
     function adjustHighRepURI(string memory _newURI) external onlyOwner {

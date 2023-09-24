@@ -10,8 +10,9 @@ Prizes will be awarded to the best projects built on top of UMA's optimistic ora
 🏊 Pool Prize: $3,000 in $UMA distributed between all qualifying submissions
 
 ### Please add a sentence or two on why you're applicable for this prize.
-UMA plays a crucial role in assigning reputation to funds through the optimistic oracle. Reputable relies on the oracle to report any malpractice the funds might commit with user's money. The decentralized nature of UMA curates a reputation score that Reputables user's can rely on.
+UMA plays a crucial role in assigning reputation to funds through the optimistic oracle. Reputable relies on the oracle to report any malpractice the funds might commit with user's money. The decentralized nature of UMA curates a reputation score that Reputables user's can rely on. We also let users query data to check for dispute results.
 
+<img width="1273" alt="Screenshot 2023-09-24 082412" src="https://github.com/WilliamUW/ETHNYC/assets/22282583/04bee516-f528-4e3c-a9df-c7512ee74c93">
 
 https://github.com/WilliamUW/ETHNYC/assets/25058545/f4fee55a-d9f2-4848-bc03-07e89ab3c27b
 

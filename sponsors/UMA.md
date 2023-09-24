@@ -1,6 +1,6 @@
 # Sponsor Prize
 
-## [UMA]
+## UMA
 
 ### Prize Requirements
 Prizes will be awarded to the best projects built on top of UMA's optimistic oracle, or the Across bridge.

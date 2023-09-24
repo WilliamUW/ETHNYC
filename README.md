@@ -14,7 +14,7 @@ Although fund management can be especially helpful when it comes to tracking cha
 
 ## ❓ What it does
 
-**Reputation** is a multipurpose, platform-agnostic tool that uses a quadratic voting and dispute/ranking based algorithm to determine the reputation of investors and investees. View ratings, submit disputes, and deploy capital from any chain.
+**Reputable** is a multipurpose, platform-agnostic tool that uses a quadratic voting and dispute/ranking based algorithm to determine the reputation of investors and investees. View ratings, submit disputes, and deploy capital from any chain.
 
 **Login** with WalletConnect or MetaMask to access our platform [here](link here).
 

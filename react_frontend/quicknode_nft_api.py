@@ -1,7 +1,7 @@
 import requests
 import json
 
-url = "https://docs-demo.quiknode.pro/"
+url = "https://proportionate-warmhearted-haze.matic.discover.quiknode.pro/857cce259927c7e00285734f61861d146425bef8/"
 
 payload = json.dumps({
   "id": 67,
@@ -16,6 +16,21 @@ payload = json.dumps({
     "perPage": 10
   }]
 })
+headers = {
+  'Content-Type': 'application/json'
+}
+
+response = requests.request("POST", url, headers=headers, data=payload)
+
+print(response.text)
+
+payload = {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "method": "qn_getTransactionsByAddress",
+    "params": ["0x0E5d299236647563649526cfa25c39d6848101f5"]
+}
+
 headers = {
   'Content-Type': 'application/json'
 }

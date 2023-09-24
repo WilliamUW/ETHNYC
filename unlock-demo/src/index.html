@@ -1,0 +1,30 @@
+<script>
+  (function(d, s) {
+    var js = d.createElement(s),
+      sc = d.getElementsByTagName(s)[0];
+    js.src = "https://paywall.unlock-protocol.com/static/unlock.latest.min.js";
+    sc.parentNode.insertBefore(js, sc);
+  }(document, "script"));
+</script>
+
+<script>
+  var unlockProtocolConfig = {
+    "network": 1, // Network ID (1 is for mainnet, 4 for rinkeby, 100 for xDai, etc)  
+    "locks": {
+      "0x0E5d299236647563649526cfa25c39d6848101f5": {
+        "name": "Investors"
+      }
+    },
+    "icon": "https://unlock-protocol.com/static/images/svg/unlock-word-mark.svg",
+    "callToAction": {
+      "default": "Please unlock this demo!"
+    }
+  }
+</script>
+
+<h1>Unlock Demo</h1>
+<p class="unlock-content locked">Unlock Demo is currently locked 🔒 </p>
+<p class="unlock-content unlocked">Unlock Demo is currently unlocked 🎉</p>
+<p class="unlock-content locked" onclick="window.unlockProtocol && window.unlockProtocol.loadCheckoutModal()"><button class="button">
+    Unlock!
+  </button></p>

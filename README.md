@@ -13,7 +13,7 @@
 Investors and donors would be more confident depositing money in funds that have a demonstrably clean track record. Users should have the ability to easily conduct market research and audit fund management. How do we ensure capital is securely deployed? With **Reputable**! 
 
 <p align="center">
-  <img width="655" height="705" src="https://github.com/WilliamUW/ETHNYC/assets/22282583/9b6d2c1f-80ea-4ab3-bb07-9a6a0516c196">
+  <img width="625" height="785" src="https://github.com/WilliamUW/ETHNYC/assets/22282583/9b6d2c1f-80ea-4ab3-bb07-9a6a0516c196">
 </p>
 
 ## ❓ What it does
@@ -25,7 +25,10 @@ Investors and donors would be more confident depositing money in funds that have
 
 ## 🚧 How we built it 
 
-Technologies Used: The Graph, Worldcoin, Airstack, WalletConnect, UMA, 1inch Network, Uniswap Foundation, Gnosis Chain, Safe, Aave, Polygon, Arbitrum, Base, Axiom, Apecoin, Biconomy, QuickNode, Filecoin, Axelar
+<img width="1280" alt="Screenshot 2023-09-24 082531" src="https://github.com/WilliamUW/ETHNYC/assets/22282583/d1a80581-6b14-4d50-85c9-233c97ed7cc7">
+<img width="1280" alt="Screenshot 2023-09-24 082548" src="https://github.com/WilliamUW/ETHNYC/assets/22282583/956a130b-99c1-4880-b938-aeaee1431a81">
+
+Technologies Used: The Graph, Worldcoin, Airstack, WalletConnect, UMA, 1inch Network, Uniswap Foundation, Gnosis Chain, Safe, Aave GHO, Polygon, Arbitrum, Base, Axiom, Apecoin, Biconomy, QuickNode, Filecoin, Axelar
 
 1. We are leveraging **([WorldCoin](https://github.com/WilliamUW/ETHNYC/blob/main/sponsors/WorldCoin.md))** to provide secure authentication login! (We want to make sure real people are filing disputes!)
    - User privacy is preserved using **([Polygon](https://github.com/WilliamUW/ETHNYC/blob/main/sponsors/Polygon.md))**  ID's Verifiable Credentials  
@@ -35,22 +38,29 @@ Technologies Used: The Graph, Worldcoin, Airstack, WalletConnect, UMA, 1inch Net
 
 2. We leveraged **([Nouns](https://github.com/WilliamUW/ETHNYC/blob/main/sponsors/Nouns.md))** to generate unique user profile pictures based on the user's reputation and to ensure protection of user identity
    
-3. Fund NFTs minted using **([QuickNode](https://github.com/WilliamUW/ETHNYC/blob/main/sponsors/QuickNode.md))**
-   - Unlock for membership NFTs, token gated access to investor only documentation **Unlock** **[unlock](link here)**
-       - Based on reputation
-       - Soulbound NFT if reputation gets too low     
-     
-3. NFT metadata is stored with **([IPFS](https://github.com/WilliamUW/ETHNYC/blob/main/sponsors/IPFS.md))**, so it never goes away 
+3. Soulbound NFTs fetched using **([QuickNode](https://github.com/WilliamUW/ETHNYC/blob/main/sponsors/QuickNode.md))**
+          
+4. NFT metadata is stored with **([IPFS](https://github.com/WilliamUW/ETHNYC/blob/main/sponsors/IPFS.md))**, so it never goes away 
    
-4. Universal token and chain support by leveraging **([Axlear](https://github.com/WilliamUW/ETHNYC/blob/main/sponsors/Axlear.md))**'s cross-chain communication 
+5. Maintaince of reputations across all deploy networks powered by **([Axelar](https://github.com/WilliamUW/ETHNYC/blob/main/sponsors/Axlear.md))**'s cross-chain communication
 
-5. We track transaction data on a variety of wallets using  **([AirStack](https://github.com/WilliamUW/ETHNYC/blob/main/sponsors/Airstack.md))**
+6. Gas fees estimated and transactions read using **([Safe](https://github.com/WilliamUW/ETHNYC/blob/main/sponsors/Safe.md))**
+   
+7. We track transaction data on a variety of wallets using  **([AirStack](https://github.com/WilliamUW/ETHNYC/blob/main/sponsors/Airstack.md))**
+  
+8.   We leveraged **([1inch Network](https://github.com/WilliamUW/ETHNYC/blob/main/sponsors/1inchNetwork.md))** so that users could easily swap tokens to invest in a fund of their chooisng
+
+9. Deployed and fully functional on **([Arbitrum](https://github.com/WilliamUW/ETHNYC/blob/main/sponsors/Arbitrum.md))**, **([Base](https://github.com/WilliamUW/ETHNYC/blob/main/sponsors/Base.md))**, **([Mantle](https://github.com/WilliamUW/ETHNYC/blob/main/sponsors/Mantle.md))**, and **([Neon EVM](https://github.com/WilliamUW/ETHNYC/blob/main/sponsors/NeonEVM.md))**
+
+<img width="1279" alt="Screenshot 2023-09-24 082422" src="https://github.com/WilliamUW/ETHNYC/assets/22282583/72708b72-75a0-41f9-8b85-9ae6895006fb">
+<img width="1273" alt="Screenshot 2023-09-24 082412" src="https://github.com/WilliamUW/ETHNYC/assets/22282583/4a5f34b5-3da5-4546-8114-3ce31dabd7ef">
+<img width="1272" alt="Screenshot 2023-09-24 082348" src="https://github.com/WilliamUW/ETHNYC/assets/22282583/5a5a3299-935e-48da-89f7-6b869995230c">
 
 Check out our [ETHGlobal page](link here)! Reputable.ai is an **([ETHGlobal NYC](https://ethglobal.com/events/newyork2023))** project.
 
 ## Pitch
 
-👀 [Slide Deck](link here)
+👀 [Slide Deck](https://www.canva.com/design/DAFvPd0ZWsQ/6WnkYcl2YxM5M7jFcK6UeA/edit?utm_content=DAFvPd0ZWsQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 ## Demos
 

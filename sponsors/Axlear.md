@@ -1,6 +1,6 @@
 # Sponsor Prize
 
-## [Axelar]
+## Axelar
 
 ### Prize Requirements
 Use GMP’s callContract or callContractWithToken to provide valuable interchain functionality as part of your DApp
